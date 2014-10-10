@@ -1,6 +1,6 @@
 Yosembiance
 ===========
-A Unity theme inspired by OSX Yosemite based on Radiance.
+A Unity theme inspired by OSX Yosemite based on Ambiance.
 
 
 Changelog
