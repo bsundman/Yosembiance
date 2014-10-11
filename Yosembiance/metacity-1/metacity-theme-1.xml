@@ -2,10 +2,10 @@
 
 <metacity_theme>
 <info>
-  <name>Yosembiance</name>
-  <author>Brian Sundman, Kenneth Wimer, James Schriver, Andrea Cimitan</author>
+  <name>Ambiance</name>
+  <author>Kenneth Wimer, James Schriver, Andrea Cimitan</author>
   <copyright>Canonical Ltd.</copyright>
-  <date>October, 2014</date>
+  <date>June, 2011</date>
   <description>Metacity theme</description>
 </info>
 
@@ -389,8 +389,6 @@
   <button function="close" state="normal" draw_ops="close_focused_normal"/>
   <button function="close" state="prelight" draw_ops="close_focused_prelight"/>
   <button function="close" state="pressed" draw_ops="close_focused_pressed"/>
-<!--  <shadow radius="8.0" opacity="0.75" color="#abde4f" x_offset="1" y_offset="4"/> -->
-  <padding left="7" right="7" bottom="7"/>
 </frame_style>
 
 <frame_style name="normal_unfocused" geometry="frame_geometry_normal">
@@ -429,8 +427,6 @@
   <button function="close" state="normal" draw_ops="close_unfocused_normal"/>
   <button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
   <button function="close" state="pressed" draw_ops="close_unfocused_pressed"/>
-  <shadow radius="8.0" opacity="0.5" color="#abde4f" x_offset="1" y_offset="4"/>
-  <padding left="7" right="7" bottom="7"/>
 </frame_style>
 
 <frame_style name="maximized_focused" geometry="geometry_maximized" parent="normal_focused">
@@ -439,8 +435,6 @@
   <button function="maximize" state="normal" draw_ops="unmaximize_focused_normal"/>
   <button function="maximize" state="prelight" draw_ops="unmaximize_focused_prelight"/>
   <button function="maximize" state="pressed" draw_ops="unmaximize_focused_pressed"/>
-  <shadow radius="0.0" opacity="0.0" color="#000000" x_offset="0" y_offset="0"/>
-  <padding left="0" right="0" bottom="0"/>
 </frame_style>
 
 <frame_style name="maximized_unfocused" geometry="geometry_maximized" parent="normal_unfocused">
@@ -449,8 +443,6 @@
   <button function="maximize" state="normal" draw_ops="unmaximize_unfocused_normal"/>
   <button function="maximize" state="prelight" draw_ops="unmaximize_unfocused_prelight"/>
   <button function="maximize" state="pressed" draw_ops="unmaximize_unfocused_pressed"/>
-  <shadow radius="0.0" opacity="0.0" color="#000000" x_offset="0" y_offset="0"/>
-  <padding left="0" right="0" bottom="0"/>
 </frame_style>
 
 <frame_style name="utility_focused" parent="normal_focused">
@@ -464,8 +456,6 @@
   <button function="close" state="normal" draw_ops="close_focused_normal"/>
   <button function="close" state="prelight" draw_ops="close_focused_prelight"/>
   <button function="close" state="pressed" draw_ops="close_focused_pressed"/>
-  <shadow radius="8.0" opacity="0.3" color="#abde4f" x_offset="1" y_offset="1"/>
-  <padding left="2" right="2" bottom="2"/>
 </frame_style>
 
 <frame_style name="utility_unfocused" parent="normal_unfocused">
@@ -479,8 +469,6 @@
   <button function="close" state="normal" draw_ops="close_unfocused_normal"/>
   <button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
   <button function="close" state="pressed" draw_ops="close_unfocused_pressed"/>
-  <shadow radius="8.0" opacity="0.3" color="#abde4f" x_offset="1" y_offset="1"/>
-  <padding left="2" right="2" bottom="2"/>
 </frame_style>
 
 <frame_style name="border" geometry="border" parent="normal_focused">
