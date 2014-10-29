@@ -39,8 +39,8 @@ PanelMenuBar.menubar,
 PanelMenuBar.menubar.menuitem {
     -PanelMenuBar-icon-visible: true;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.5)),
-                                     to (shade (@dark_bg_color, 1.05)));
+                                     from (shade (@dark_bg_color, 1.15)),
+                                     to (shade (@dark_bg_color, 1.00)));
 }
 
 PanelAppletFrame { 
