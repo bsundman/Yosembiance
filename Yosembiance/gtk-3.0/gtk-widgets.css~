@@ -646,11 +646,11 @@ GtkIconView.content-view.check:selected {
 /****************
  * drawing area *
  ****************/
-/* comment this out to fix applications like shotwell (LP: #931630)
+/* comment this out to fix applications like shotwell (LP: #931630)*/
+
 GtkDrawingArea {
     background-color: transparent;
 }
-*/
 
 /*********
  * entry *
