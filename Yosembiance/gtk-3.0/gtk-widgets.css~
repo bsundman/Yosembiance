@@ -91,6 +91,28 @@ Assistant GtkEventBox {
     background-color: @bg_color;
 }
 
+
+/* From 14.04 */
+
+GtkWindow {
+    color: @fg_color;
+    background-color: @bg_color;
+}
+
+GtkPaned {
+    background-color: @bg_color;
+}
+
+GtkWindow:backdrop {
+    color: @backdrop_fg_color;
+}
+
+GtkEventBox {
+    background-color: @bg_color;
+}
+
+
+
 /*********
  * arrow *
  *********/
