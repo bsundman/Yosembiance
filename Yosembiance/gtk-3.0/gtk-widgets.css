@@ -1175,7 +1175,11 @@ GtkComboBox .menu .menuitem *:insensitive {
 /************
  * notebook *
  ************/
-.notebook { background-color: @bg_color; }
+.notebook {
+  background-color: shade (@bg_color, 1.02);
+  background-image: none;
+  background-clip: border-box;
+}
 .notebook tab.top { padding: 4px 6px 2px 6px; }
 .notebook tab.top:active { padding-bottom: 3px; }
 .notebook tab.bottom { padding: 2px 6px 4px 6px; }
