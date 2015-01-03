@@ -1176,7 +1176,7 @@ GtkComboBox .menu .menuitem *:insensitive {
  * notebook *
  ************/
 .notebook {
-  background-color: shade (@bg_color, 1.02);
+  background-color: @bg_color;
   background-image: none;
   background-clip: border-box;
 }
