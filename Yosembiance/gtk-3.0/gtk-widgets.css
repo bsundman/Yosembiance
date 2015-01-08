@@ -71,6 +71,11 @@
     outline-offset: 5px;
 }
 
+GtkWindow {
+    color: @fg_color;
+    background-color: @bg_color;
+}
+
 .background {
     color: @fg_color;
     background-color: @bg_color;
@@ -657,6 +662,7 @@ GtkDrawingArea {
     background-color: transparent;
 }
 */
+
 /*********
  * entry *
  *********/
