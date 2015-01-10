@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -17,7 +18,16 @@
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="close.svg">
   <defs
-     id="defs10" />
+     id="defs10">
+    <linearGradient
+       id="linearGradient3781"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3783" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -27,15 +37,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="960"
+     inkscape:window-height="1028"
      id="namedview8"
      showgrid="false"
-     inkscape:zoom="12.421053"
-     inkscape:cx="9.5"
-     inkscape:cy="9.5"
-     inkscape:window-x="693"
-     inkscape:window-y="183"
+     inkscape:zoom="18.911167"
+     inkscape:cx="3.2401714"
+     inkscape:cy="12.394939"
+     inkscape:window-x="10"
+     inkscape:window-y="24"
      inkscape:window-maximized="0"
      inkscape:current-layer="g4113" />
   <metadata
@@ -56,20 +66,18 @@
     <g
        id="g4113"
        transform="translate(-289.71 -511)">
-      <path
-         id="circle4507"
-         d="m 85.5,97.5 c -3.926991,0 -7.5,3.57301 -7.5,7.5 0,3.92699 3.573009,7.5 7.5,7.5 3.926991,0 7.5,-3.57301 7.5,-7.5 0,-3.92699 -3.573009,-7.5 -7.5,-7.5 z"
-         style="color:#000000;fill:#dd4814"
-         transform="translate(-76.5,938.36)"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="sssss" />
       <rect
          id="rect4539"
          style="color:#000000;fill:none"
          height="19"
          width="19"
-         y="1033.9"
+         y="1033.86"
          x="-0.5" />
+      <path
+         style="fill:#dd4314;fill-opacity:1;stroke:none"
+         d="M 8.9999999,1050.36 C 5.1340066,1050.36 2,1047.226 2,1043.36 c 0,-3.866 3.1340066,-7 6.9999999,-7 3.8659931,0 7.0000001,3.134 7.0000001,7 0,3.866 -3.134007,7 -7.0000001,7 z"
+         id="path2985"
+         inkscape:connector-curvature="0" />
     </g>
   </g>
 </svg>

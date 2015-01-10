@@ -31,7 +31,7 @@ UnityDecoration.top {
     background-color: transparent;
     background-clip: border-box;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (rgba (60, 59, 55, .9), 1.2)),
+                                     from (shade (#3c3b37, 1.2)),
                                      to (shade (@dark_bg_color, 1.0)));
 
     color: @dark_fg_color;
