@@ -6,6 +6,10 @@ A Unity theme inspired by OSX Yosemite based on Ambiance.
 Changelog
 =========
 
+February 18, 2015
+----------------------
+After many iterations, trials, and user votes, the near-final window controls have been established.  If you would like the old controls, please stick with Yosembiance-0.6.
+
 February 1, 2015
 ----------------------
 Tweaked window controls and borders, modified Unity launcher controls.
