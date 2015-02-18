@@ -8,7 +8,7 @@ Changelog
 
 February 18, 2015
 ----------------------
-After many iterations, trials, and user votes, the near-final window controls have been established.  If you would like the old controls, please stick with Yosembiance-0.6.
+After many iterations, trials, and user votes, the near-final window controls have been set.  If you would like to keep the old controls, please stick with Yosembiance-0.6 branch.
 
 February 1, 2015
 ----------------------
