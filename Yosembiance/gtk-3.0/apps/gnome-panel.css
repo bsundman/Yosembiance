@@ -13,9 +13,16 @@ PanelToplevel {
 PanelWidget,
 PanelApplet,
 PanelToplevel {
+
+/**
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.5)),
                                      to (shade (@dark_bg_color, 1.05)));
+**/
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.1)),
+                                     to (shade (@dark_bg_color, 1)));
+
 }
 
 PanelApplet {
@@ -25,10 +32,14 @@ PanelApplet {
 PanelSeparator:backdrop,
 PanelSeparator {
     border-width: 0;
+/**
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.5)),
                                      to (shade (@dark_bg_color, 1.05)));
-
+**/
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.1)),
+                                     to (shade (@dark_bg_color, 1)));
     color: @dark_fg_color;
 }
 
@@ -45,9 +56,14 @@ PanelMenuBar.menubar.menuitem {
 
 PanelAppletFrame { 
     background-color: @dark_bg_color;
+/**
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.5)),
                                      to (shade (@dark_bg_color, 1.05)));
+**/
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.1)),
+                                     to (shade (@dark_bg_color, 1)));
     border-width: 0;
 }
 
@@ -56,9 +72,14 @@ PanelApplet .button {
     -GtkButton-inner-border: 2;
 
     border-image: none;
+/**
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.5)),
                                      to (shade (@dark_bg_color, 1.05)));
+**/
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.1)),
+                                     to (shade (@dark_bg_color, 1)));
     border-color: alpha (shade (@dark_bg_color, 1.0), 0.6);
     border-left-color: alpha (shade (@dark_bg_color, 1.5), 0.3);
     border-radius: 0;
