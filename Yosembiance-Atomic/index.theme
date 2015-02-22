@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Yosembiance
-Comment=Ubuntu Yosembiance theme
+Name=Yosembiance-Atomic
+Comment=Yosembiance-Atomic theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Yosembiance
-MetacityTheme=Yosembiance
+GtkTheme=Yosembiance-Atomic
+MetacityTheme=Yosembiance-Atomic
 IconTheme=ubuntu-mono-dark
 CursorTheme=DMZ-White
 ButtonLayout=close,minimize,maximize:
