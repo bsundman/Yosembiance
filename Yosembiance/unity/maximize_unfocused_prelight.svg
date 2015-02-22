@@ -16,7 +16,7 @@
    width="19"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="maximize_unfocused_prelight.svg">
+   sodipodi:docname="maximize.svg">
   <defs
      id="defs10">
     <linearGradient
@@ -37,15 +37,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
+     inkscape:window-width="1300"
      inkscape:window-height="1028"
      id="namedview8"
      showgrid="false"
      inkscape:zoom="18.911167"
-     inkscape:cx="-3.1749085"
-     inkscape:cy="12.247693"
-     inkscape:window-x="856"
-     inkscape:window-y="24"
+     inkscape:cx="10.600021"
+     inkscape:cy="6.0079935"
+     inkscape:window-x="188"
+     inkscape:window-y="33"
      inkscape:window-maximized="0"
      inkscape:current-layer="g4113" />
   <metadata
@@ -74,7 +74,7 @@
          y="1033.86"
          x="-0.5" />
       <path
-         style="fill:#72716a;fill-opacity:1;stroke:none"
+         style="fill:#9a9992;fill-opacity:1;stroke:none"
          d="m 2,1043.36 c 0,3.8731 3.1269,7 7,7 3.8732,0 7,-3.1269 7,-7 0,-3.8731 -3.1268,-7 -7,-7 -3.8731,0 -7,3.1269 -7,7 z m 3.5,1.7188 0,-5 c -8e-4,-0.01 -8e-4,-0.021 0,-0.031 l 0,-0.062 c 0.009,-0.011 0.02025,-0.022 0.03125,-0.031 0.0344,-0.053 0.09325,-0.088 0.15625,-0.094 l 5.03125,0 -5.21875,5.2188 z m 1.78125,1.7812 5.21875,-5.2187 0,5 c -0.003,0.033 -0.01325,0.065 -0.03125,0.094 -0.009,0.012 -0.02025,0.022 -0.03125,0.031 -0.028,0.046 -0.073,0.08 -0.125,0.094 -0.01,8e-4 -0.02125,8e-4 -0.03125,0 l -5,0 z"
          id="path2985"
          inkscape:connector-curvature="0" />
