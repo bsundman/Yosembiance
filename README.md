@@ -8,7 +8,7 @@ Changelog
 
 February 21, 2015
 ----------------------
-Significant improvements in Metacity (Mate, Cinnamon, Gnome)
+Significant improvements in Metacity (Mate, Cinnamon, Gnome).  Added gnome-shell theme.
 
 February 18, 2015
 ----------------------
