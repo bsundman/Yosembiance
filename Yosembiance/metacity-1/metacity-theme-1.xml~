@@ -19,8 +19,8 @@
   <distance name="button_width" value="18"/>
   <distance name="button_height" value="20"/>
   <distance name="title_vertical_pad" value="11"/>
-  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
-  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
+  <border name="title_border" left="2" right="2" top="0" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="1" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="geometry_maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
@@ -32,8 +32,8 @@
   <distance name="button_width" value="18"/>
   <distance name="button_height" value="20"/>
   <distance name="title_vertical_pad" value="11"/>
-  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
-  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
+  <border name="title_border" left="2" right="2" top="0" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="1" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="border" has_title="false">
@@ -41,7 +41,7 @@
   <distance name="right_width" value="3"/>
   <distance name="bottom_height" value="3"/>
   <distance name="left_titlebar_edge" value="0"/>
-  <distance name="right_titlebar_edge" value="0"/>
+  <distance name="right_titlebar_edge" value="1"/>
   <distance name="button_width" value="0"/>
   <distance name="button_height" value="0"/>
   <distance name="title_vertical_pad" value="3"/>
@@ -70,15 +70,15 @@
 <draw_ops name="draw_title">
   <!-- frame and gradient -->
   <rectangle color="#3c3b37" filled="false" x="0" y="0" width="width-1" height="top_height"/>
-  <gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
+  <gradient type="vertical" x="1" y="1" width="width" height="top_height-1">
     <color value="shade/#3c3b37/1.1" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="shade/#3c3b37/1.2" />
-    <color value="shade/#3c3b37/1.5" />
-    <color value="shade/#3c3b37/1.2" />
+    <color value="shade/#3c3b37/1.1" />
+    <color value="shade/#3c3b37/1.3" />
+    <color value="shade/#3c3b37/1.1" />
   </gradient>
   <!-- left arch -->
   <!-- <arc color="shade/#474642/1.1" x="0" y="1" width="9" height="7" start_angle="270" extent_angle="90" />
@@ -105,14 +105,14 @@
   <!-- frame and gradient -->
   <rectangle color="#3c3b37" filled="false" x="0" y="0" width="width-1" height="top_height"/>
   <gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-    <color value="#3c3b37" />
+    <color value="shade/#3c3b37/1" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="#3c3b37" />
-    <color value="#3c3b37" />
-    <color value="#3c3b37" />
+    <color value="shade/#3c3b37/1.1" />
+    <color value="shade/#3c3b37/1.1" />
+    <color value="shade/#3c3b37/1.1" />
   </gradient>
   <!-- left arch -->
   <!-- <arc color="shade/#474642/0.98" x="0" y="1" width="9" height="7" start_angle="270" extent_angle="90" />
@@ -180,6 +180,7 @@
   <line color="shade/gtk:bg[NORMAL]/0.7" x1="0" x2="width" y1="height-1" y2="height-1"/>
 </draw_ops>
 
+<!--
 <draw_ops name="border">
   <line color="shade/gtk:bg[NORMAL]/0.88" x1="1" y1="height - 2" x2="width - 2" y2="height - 2"/>
   <line color="shade/gtk:bg[NORMAL]/0.88" x1="width - 2" y1="1" x2="width - 2" y2="height - 2"/>
@@ -187,6 +188,7 @@
   <line color="shade/gtk:bg[NORMAL]/1.4" x1="1" y1="1" x2="1" y2="height - 2"/>
   <rectangle color="shade/gtk:bg[NORMAL]/0.25" filled="false"  x="0" y="0" width="width - 1" height="height - 1"/>
 </draw_ops>
+-->
 
 <!-- buttons -->
 
