@@ -1,6 +1,35 @@
 /* NOTES to contributors:
  * use 4 spaces indents, and keep code ALIGNED and ORDERED */
 
+/* Gnome 3 enhancements */
+.window-frame {
+    border-color: darker(@bg_color);
+    border-radius: 7px 7px 0 0;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 2px 8px 3px alpha(black, 0.5);
+    margin: 10px;
+}
+.window-frame:backdrop {
+     box-shadow: 0 2px 5px 1px alpha(black, 0.5);
+}
+.window-frame.tiled {
+    border-radius: 0;
+    background-color: @bg_color;
+}
+
+.titlebar {
+    border-radius: 7px 7px 0px 0px;
+}
+
+.tiled .titlebar {
+    border-radius: 0;
+}
+
+.maximized .titlebar {
+    border-radius: 0;
+}
+
 /* default */
 * {
     -GtkArrow-arrow-scaling: 0.6;
