@@ -6,6 +6,10 @@ A Unity theme inspired by OSX Yosemite based on Ambiance.
 Changelog
 =========
 
+February 21, 2015
+----------------------
+Improvments in Metacity (Mate, Cinnamon, Gnome Flashback)
+
 February 18, 2015
 ----------------------
 After many iterations, trials, and user votes, the near-final window controls have been set.  If you would like to keep the old controls, please stick with Yosembiance-0.6 branch.
