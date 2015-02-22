@@ -6,7 +6,6 @@ A Unity theme inspired by OSX Yosemite based on Ambiance.
 Changelog
 =========
 
-<<<<<<< HEAD
 February 21, 2015
 ----------------------
 Significant improvements in Metacity (Mate, Cinnamon, Gnome).  Added gnome-shell theme.
