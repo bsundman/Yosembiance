@@ -8,7 +8,7 @@ Changelog
 
 February 21, 2015
 ----------------------
-Improvements in Metacity (Mate, Cinnamon, Gnome Flashback)
+Significant improvements in Metacity (Mate, Cinnamon, Gnome)
 
 February 18, 2015
 ----------------------
