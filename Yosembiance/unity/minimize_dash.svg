@@ -15,8 +15,8 @@
    viewBox="0 0 19 19"
    width="19"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="minimize.svg">
+   inkscape:version="0.91 r"
+   sodipodi:docname="minimize_dash.svg">
   <defs
      id="defs10">
     <linearGradient
@@ -38,14 +38,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1056"
+     inkscape:window-height="1052"
      id="namedview8"
      showgrid="false"
      inkscape:zoom="18.911167"
-     inkscape:cx="3.2401714"
-     inkscape:cy="10.279787"
+     inkscape:cx="1.9182015"
+     inkscape:cy="5.5206941"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="g4113" />
   <metadata
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -74,7 +74,7 @@
          y="1033.86"
          x="-0.5" />
       <rect
-         style="fill:#f2f1f0;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="fill:#f2f1f0;fill-opacity:1;fill-rule:nonzero;stroke:none;opacity:0.75"
          id="rect3779-8-7-3"
          width="2"
          height="7"
