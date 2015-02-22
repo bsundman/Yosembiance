@@ -144,9 +144,9 @@
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="shade/#3c3b37/1.08" />
-    <color value="shade/#3c3b37/1.38" />
-    <color value="shade/#3c3b37/1.08" />
+    <color value="shade/#3c3b37/1" />
+    <color value="shade/#3c3b37/1" />
+    <color value="shade/#3c3b37/1" />
   </gradient>
 </draw_ops>
 
@@ -158,7 +158,7 @@
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
-  <line color="shade/#3c3b37/0.96" x1="0" x2="width" y1="1" y2="1"/>
+  <line color="#3c3b37" x1="0" x2="width" y1="1" y2="1"/>
 </draw_ops>
 
 <!-- window frames -->
