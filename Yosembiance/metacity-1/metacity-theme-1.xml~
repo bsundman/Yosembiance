@@ -2,25 +2,25 @@
 
 <metacity_theme>
 <info>
-  <name>Yosembiance</name>
-  <author>Brian Sundman, Kenneth Wimer, James Schriver, Andrea Cimitan</author>
+  <name>Ambiance</name>
+  <author>Kenneth Wimer, James Schriver, Andrea Cimitan</author>
   <copyright>Canonical Ltd.</copyright>
-  <date>October, 2014</date>
+  <date>June, 2011</date>
   <description>Metacity theme</description>
 </info>
 
 <!-- general window layout -->
 <frame_geometry name="frame_geometry_normal" title_scale="medium" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
-  <distance name="left_width" value="1"/>
-  <distance name="right_width" value="1"/>
-  <distance name="bottom_height" value="1"/>
+  <distance name="left_width" value="0"/>
+  <distance name="right_width" value="0"/>
+  <distance name="bottom_height" value="0"/>
   <distance name="left_titlebar_edge" value="10"/>
   <distance name="right_titlebar_edge" value="10"/>
   <distance name="button_width" value="18"/>
   <distance name="button_height" value="20"/>
   <distance name="title_vertical_pad" value="11"/>
-  <border name="title_border" left="2" right="2" top="0" bottom="0"/>
-  <border name="button_border" left="0" right="0" top="1" bottom="0"/>
+  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="geometry_maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
@@ -32,8 +32,8 @@
   <distance name="button_width" value="18"/>
   <distance name="button_height" value="20"/>
   <distance name="title_vertical_pad" value="11"/>
-  <border name="title_border" left="2" right="2" top="0" bottom="0"/>
-  <border name="button_border" left="0" right="0" top="1" bottom="0"/>
+  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="border" has_title="false">
@@ -71,14 +71,14 @@
   <!-- frame and gradient -->
   <rectangle color="#3c3b37" filled="false" x="0" y="0" width="width-1" height="top_height"/>
   <gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-    <color value="shade/#474642/1.1" />
+    <color value="shade/#3c3b37/1.1" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="shade/#474642/1.2" />
-    <color value="shade/#474642/1.5" />
-    <color value="shade/#474642/1.2" />
+    <color value="shade/#3c3b37/1.2" />
+    <color value="shade/#3c3b37/1.5" />
+    <color value="shade/#3c3b37/1.2" />
   </gradient>
   <!-- left arch -->
   <!-- <arc color="shade/#474642/1.1" x="0" y="1" width="9" height="7" start_angle="270" extent_angle="90" />
@@ -98,21 +98,21 @@
 
 <draw_ops name="draw_title_utility">
   <include name="draw_title" />
-  <line color="shade/#3c3b37/0.88" x1="0" x2="width" y1="height-1" y2="height-1"/>
+  <line color="shade/#3c3b37/1" x1="0" x2="width" y1="height-1" y2="height-1"/>
 </draw_ops>
 
 <draw_ops name="draw_title_unfocused">
   <!-- frame and gradient -->
   <rectangle color="#3c3b37" filled="false" x="0" y="0" width="width-1" height="top_height"/>
   <gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-    <color value="shade/#474642/0.92" />
+    <color value="#3c3b37" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="shade/#474642/0.94" />
-    <color value="#474642" />
-    <color value="shade/#474642/0.94" />
+    <color value="#3c3b37" />
+    <color value="#3c3b37" />
+    <color value="#3c3b37" />
   </gradient>
   <!-- left arch -->
   <!-- <arc color="shade/#474642/0.98" x="0" y="1" width="9" height="7" start_angle="270" extent_angle="90" />
@@ -132,21 +132,21 @@
 
 <draw_ops name="draw_title_utility_unfocused">
   <include name="draw_title_unfocused" />
-  <line color="shade/#3c3b37/0.88" x1="0" x2="width" y1="height-1" y2="height-1"/>
+  <line color="#3c3b37" x1="0" x2="width" y1="height-1" y2="height-1"/>
 </draw_ops>
 
 <draw_ops name="draw_title_maximized">
   <!-- frame and gradient -->
   <line color="#3c3b37" x1="0" x2="width" y1="0" y2="0"/>
   <gradient type="vertical" x="0" y="1" width="width" height="top_height-1">
-    <color value="shade/#474642/0.98" />
+    <color value="#3c3b37" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="shade/#474642/1.08" />
-    <color value="shade/#474642/1.38" />
-    <color value="shade/#474642/1.08" />
+    <color value="shade/#3c3b37/1.08" />
+    <color value="shade/#3c3b37/1.38" />
+    <color value="shade/#3c3b37/1.08" />
   </gradient>
 </draw_ops>
 
@@ -154,11 +154,11 @@
   <!-- frame and gradient -->
   <line color="#3c3b37" x1="0" x2="width" y1="0" y2="0"/>
   <gradient type="vertical" x="0" y="1" width="width" height="top_height-1">
-    <color value="shade/#474642/0.9" />
+    <color value="#3c3b37" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
-  <line color="shade/#474642/0.96" x1="0" x2="width" y1="1" y2="1"/>
+  <line color="shade/#3c3b37/0.96" x1="0" x2="width" y1="1" y2="1"/>
 </draw_ops>
 
 <!-- window frames -->
@@ -389,8 +389,6 @@
   <button function="close" state="normal" draw_ops="close_focused_normal"/>
   <button function="close" state="prelight" draw_ops="close_focused_prelight"/>
   <button function="close" state="pressed" draw_ops="close_focused_pressed"/>
-  <shadow radius="8.0" opacity="0.75" color="#abde4f" x_offset="1" y_offset="4"/>
-  <padding left="7" right="7" bottom="7"/>
 </frame_style>
 
 <frame_style name="normal_unfocused" geometry="frame_geometry_normal">
@@ -429,8 +427,6 @@
   <button function="close" state="normal" draw_ops="close_unfocused_normal"/>
   <button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
   <button function="close" state="pressed" draw_ops="close_unfocused_pressed"/>
-  <shadow radius="8.0" opacity="0.5" color="#abde4f" x_offset="1" y_offset="4"/>
-  <padding left="7" right="7" bottom="7"/>
 </frame_style>
 
 <frame_style name="maximized_focused" geometry="geometry_maximized" parent="normal_focused">
@@ -439,8 +435,6 @@
   <button function="maximize" state="normal" draw_ops="unmaximize_focused_normal"/>
   <button function="maximize" state="prelight" draw_ops="unmaximize_focused_prelight"/>
   <button function="maximize" state="pressed" draw_ops="unmaximize_focused_pressed"/>
-  <shadow radius="0.0" opacity="0.0" color="#000000" x_offset="0" y_offset="0"/>
-  <padding left="0" right="0" bottom="0"/>
 </frame_style>
 
 <frame_style name="maximized_unfocused" geometry="geometry_maximized" parent="normal_unfocused">
@@ -449,8 +443,6 @@
   <button function="maximize" state="normal" draw_ops="unmaximize_unfocused_normal"/>
   <button function="maximize" state="prelight" draw_ops="unmaximize_unfocused_prelight"/>
   <button function="maximize" state="pressed" draw_ops="unmaximize_unfocused_pressed"/>
-  <shadow radius="0.0" opacity="0.0" color="#000000" x_offset="0" y_offset="0"/>
-  <padding left="0" right="0" bottom="0"/>
 </frame_style>
 
 <frame_style name="utility_focused" parent="normal_focused">
@@ -464,8 +456,6 @@
   <button function="close" state="normal" draw_ops="close_focused_normal"/>
   <button function="close" state="prelight" draw_ops="close_focused_prelight"/>
   <button function="close" state="pressed" draw_ops="close_focused_pressed"/>
-  <shadow radius="8.0" opacity="0.3" color="#abde4f" x_offset="1" y_offset="1"/>
-  <padding left="2" right="2" bottom="2"/>
 </frame_style>
 
 <frame_style name="utility_unfocused" parent="normal_unfocused">
@@ -479,8 +469,6 @@
   <button function="close" state="normal" draw_ops="close_unfocused_normal"/>
   <button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
   <button function="close" state="pressed" draw_ops="close_unfocused_pressed"/>
-  <shadow radius="8.0" opacity="0.3" color="#abde4f" x_offset="1" y_offset="1"/>
-  <padding left="2" right="2" bottom="2"/>
 </frame_style>
 
 <frame_style name="border" geometry="border" parent="normal_focused">
