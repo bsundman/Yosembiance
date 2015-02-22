@@ -6,6 +6,10 @@ A Unity theme inspired by OSX Yosemite based on Ambiance.
 Changelog
 =========
 
+February 22, 2015
+----------------------
+Added gnome-shell theme.
+
 February 1, 2015
 ----------------------
 Tweaked window controls and borders, modified Unity launcher controls.
