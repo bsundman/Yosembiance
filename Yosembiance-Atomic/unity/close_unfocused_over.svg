@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4486"
+   height="19"
+   viewBox="0 0 19 19"
+   width="19"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="close_focused_normal.svg">
+  <defs
+     id="defs10">
+    <linearGradient
+       id="linearGradient3781"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3783" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="960"
+     inkscape:window-height="1028"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="18.911167"
+     inkscape:cx="11.912296"
+     inkscape:cy="7.3185729"
+     inkscape:window-x="960"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g4113" />
+  <metadata
+     id="metadata4491">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="translate(290.21 -522.86)">
+    <g
+       id="g4113"
+       transform="translate(-289.71 -511)">
+      <rect
+         id="rect4539"
+         style="color:#000000;fill:none"
+         height="19"
+         width="19"
+         y="1033.86"
+         x="-0.5" />
+      <path
+         style="opacity:1;fill:#dd4314;fill-opacity:1;stroke:none"
+         d="M 9.5 2.5 C 5.6268908 2.5 2.5 5.6269 2.5 9.5 C 2.5 13.3732 5.6268908 16.5 9.5 16.5 C 13.373108 16.5 16.5 13.3732 16.5 9.5 C 16.5 5.6269 13.373108 2.5 9.5 2.5 z M 7.5625 6.15625 L 9.5 8.09375 L 11.4375 6.15625 L 12.84375 7.5625 L 10.90625 9.5 L 12.84375 11.4375 L 11.4375 12.84375 L 9.5 10.90625 L 7.5625 12.84375 L 6.15625 11.4375 L 8.09375 9.5 L 6.15625 7.5625 L 7.5625 6.15625 z "
+         transform="translate(-0.5,1033.86)"
+         id="path2985" />
+    </g>
+  </g>
+</svg>
