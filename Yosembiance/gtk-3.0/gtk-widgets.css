@@ -1,10 +1,10 @@
 /* NOTES to contributors:
  * use 4 spaces intends, and keep code ALIGNED and ORDERED */
 
-/* Gnome 3 enhancements */
+/* Gnome 3 enhancements.  Larger border-radius radius for better antialiasing */
 .window-frame {
     border-color: darker(@bg_color);
-    border-radius: 7px 7px 0 0;
+    border-radius: 9px 9px 0 0;
     border-width: 1px;
     border-style: solid;
     box-shadow: 0 2px 8px 3px alpha(black, 0.5);
@@ -19,7 +19,7 @@
 }
 
 .titlebar {
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 9px 9px 0px 0px;
 }
 
 .tiled .titlebar {
