@@ -1,0 +1,12 @@
+Source: yosembiance-theme
+Section: gnome
+Priority: extra
+Maintainer: Brian Sundman <bsundman@gmail.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.3
+Homepage: http://www.sundman.ca/
+
+Package: yosembiance-theme
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, gtk3-engines-unico, gtk2-engines-murrine, gtk2-engines-pixbuf
+Description: Yosembiance gtk2, gtk3, unity, gnome-shell, and metacity theme.
