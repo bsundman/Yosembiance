@@ -26,7 +26,7 @@
 <frame_geometry name="geometry_maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
   <distance name="left_width" value="0"/>
   <distance name="right_width" value="0"/>
-  <distance name="bottom_height" value="0"/>
+  <distance name="bottom_height" value="1"/>
   <distance name="left_titlebar_edge" value="10"/>
   <distance name="right_titlebar_edge" value="10"/>
   <distance name="button_width" value="18"/>
@@ -105,7 +105,7 @@
   <!-- frame and gradient -->
   <rectangle color="#3c3b37" filled="false" x="0" y="0" width="width-1" height="top_height"/>
   <gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-    <color value="shade/#3c3b37/1" />
+    <color value="#3c3b37" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
