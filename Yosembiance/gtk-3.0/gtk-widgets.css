@@ -502,9 +502,9 @@ GdMainIconView.content-view {
  *********/
 .frame {
     border-radius: 3px;
-    border-width: 0px;
+    border-width: 1px;
     border-style: solid;
-    border-color: @bg_color;
+    border-color: shade (@bg_color, 0.82);
     border-image: none;
     background: none;
 }
@@ -518,7 +518,8 @@ GdMainIconView.content-view {
  ****************/
 
 .window-frame.csd.popup {
-    border: 0;
+    border-style: none;
+    border-radius: 0;
     box-shadow: 0 3px 8px @shadow_color;
 }
 
@@ -643,15 +644,24 @@ GtkMenuToolButton.menu,
 .primary-toolbar .button .menu,
 .header-bar .button .menu,
 .menu {
-    background-color: @dark_bg_color;
+    background-image: none;
+    background-color: shade (@dark_bg_color, 1.08);
+    border-bottom-color: shade (@dark_bg_color, 0.96);
+    border-left-color: shade (@dark_bg_color, 0.8);
+    border-right-color: shade (@dark_bg_color, 0.8);
+    border-top-color: shade (@dark_bg_color, 0.96);
     padding: 0;
-    border: 0;
+    border-width: 1px;
+    border-style: solid;
 
     color: @dark_fg_color;
 
-    box-shadow: inset 0 0 shade (@dark_bg_color, 1.2),
+    box-shadow: inset 0 1px shade (@dark_bg_color, 1.18),
+                inset 0 -1px shade (@dark_bg_color, 1.18),
+                inset -1px 0 shade (@dark_bg_color, 1.16),
+                inset 1px 0 shade (@dark_bg_color, 1.18);
 
-    margin: 0;
+    margin: 1px;
 }
 
 .toolbar .menu,
@@ -682,9 +692,11 @@ GtkComboBox .menu {
 .menu.button:insensitive,
 .menu.button
 {
-    background-color: @dark_bg_color;
+    background-color: shade (@dark_bg_color, 1.08);
     background-image: none;
-    border: 0;
+    border-radius: 0;
+    border-style: none;
+    border-width: 1px;
 }
 
 .context-menu {
