@@ -27,7 +27,7 @@ GeditWindow .notebook tab {
 }
 
 GeditViewFrame .gedit-search-slider {
-    background-color: @theme_base_color;
+    background-color: @base_color;
     padding: 6px;
     border-color: shade (@notebook_tab_gradient_b, 0.80);
     border-radius: 0 0 3px 3px;
@@ -42,12 +42,12 @@ GeditViewFrame .gedit-search-slider .not-found {
 }
 
 GeditViewFrame .gedit-search-slider .not-found:selected {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
 }
 
 GeditFileBrowserWidget .toolbar  {
-    background-color: @theme_bg_color;
+    background-color: @bg_color;
     border: none;
     padding-bottom: 3px;
 }

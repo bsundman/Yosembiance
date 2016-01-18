@@ -57,7 +57,6 @@
 
 .lightdm.button:focused,
 .lightdm.entry:focused {
-    -unico-focus-border-color: alpha (white, 0.9);
     border-color: alpha (white, 0.9);
     border-width: 1px;
     border-style: solid;
@@ -67,4 +66,29 @@
 
 .lightdm.entry:selected {
     background-color: alpha (white, 0.2);
+}
+
+@keyframes dashentry_spinner {
+    to { -gtk-icon-transform: rotate(1turn); }
+}
+
+.lightdm.entry:active {
+    -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+    animation: dashentry_spinner 1s infinite linear;
+}
+
+.lightdm.option-button {
+    padding: 2px;
+    background: none;
+    border: 0;
+}
+
+.lightdm.toggle-button {
+    background: none;
+    border-width: 0;
+}
+
+.lightdm.toggle-button.selected {
+    background-color: alpha (black, 0.3);
+    border-width: 1px;
 }
