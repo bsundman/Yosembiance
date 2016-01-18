@@ -16,7 +16,10 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    viewBox="0 0 19 19"
-   sodipodi:docname="close_focused_prelight.svg">
+   sodipodi:docname="close_focused_prelight.svg"
+   inkscape:export-filename="/home/brian/github/Yosembiance/Yosembiance/metacity-1/close_focused_prelight.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4772">
     <linearGradient
@@ -51,7 +54,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="24.286129"
      inkscape:cx="9.5641015"
-     inkscape:cy="9.6732173"
+     inkscape:cy="10.002623"
      inkscape:document-units="px"
      inkscape:current-layer="g4137"
      showgrid="false"
@@ -59,10 +62,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1333"
-     inkscape:window-height="658"
-     inkscape:window-x="128"
-     inkscape:window-y="93"
+     inkscape:window-width="958"
+     inkscape:window-height="1026"
+     inkscape:window-x="960"
+     inkscape:window-y="0"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata4775">

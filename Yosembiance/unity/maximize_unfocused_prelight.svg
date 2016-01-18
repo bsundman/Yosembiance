@@ -16,7 +16,10 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    viewBox="0 0 19 19"
-   sodipodi:docname="maximize_unfocused_prelight.svg">
+   sodipodi:docname="maximize_unfocused_prelight.svg"
+   inkscape:export-filename="/home/brian/github/Yosembiance/Yosembiance/metacity-1/maximize_unfocused_prelight.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4772">
     <linearGradient
@@ -24,7 +27,7 @@
        xlink:href="#linearGradient4197"
        id="linearGradient4638"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.96842104,0,0,0.96842104,-1072.0623,-1019.7981)"
+       gradientTransform="matrix(0.9656025,0,0,0.9656025,-1072.0349,-1016.8023)"
        x1="2.0000153"
        y1="1062.8622"
        x2="16.999975"
@@ -50,8 +53,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="19.428903"
-     inkscape:cx="2.8835902"
-     inkscape:cy="5.6192056"
+     inkscape:cx="9.2658342"
+     inkscape:cy="7.0603575"
      inkscape:document-units="px"
      inkscape:current-layer="g4171"
      showgrid="false"
@@ -59,11 +62,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
+     inkscape:window-width="958"
+     inkscape:window-height="1026"
      inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata4775">
     <rdf:RDF>
@@ -92,20 +95,20 @@
          transform="matrix(0,-1,1,0,0,0)"
          style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#linearGradient4638);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;marker:none;enable-background:accumulate"
          id="circle4175"
-         cx="-1062.8627"
-         cy="9.4999933"
-         r="7.2631388" />
+         cx="-1062.8622"
+         cy="9.4999905"
+         r="7.2420001" />
       <rect
-         y="1053.6622"
-         x="0.29999"
-         height="18.4"
-         width="18.4"
+         y="1053.5623"
+         x="0.19999"
+         height="18.6"
+         width="18.6"
          id="rect4181"
          style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
     </g>
     <path
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#51504b;fill-opacity:1;stroke:none;stroke-width:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m -281.2469,528.97203 0,0.48418 0,6.29474 6.77896,0 0,-6.77892 -6.77896,0 z m 0.96844,0.9684 4.84208,0 0,4.84214 -4.84208,0 0,-4.84214 z"
+       d="m -281.23705,528.98136 0,0.48277 0,6.27642 6.75924,0 0,-6.75919 -6.75924,0 z m 0.96563,0.96559 4.82799,0 0,4.82804 -4.82799,0 0,-4.82804 z"
        id="rect4235"
        inkscape:connector-curvature="0" />
   </g>

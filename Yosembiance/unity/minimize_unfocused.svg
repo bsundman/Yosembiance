@@ -16,7 +16,10 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    viewBox="0 0 19 19"
-   sodipodi:docname="minimize_unfocused.svg">
+   sodipodi:docname="minimize_unfocused.svg"
+   inkscape:export-filename="/home/brian/github/Yosembiance/Yosembiance/metacity-1/minimize_unfocused.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4772">
     <linearGradient
@@ -24,7 +27,7 @@
        xlink:href="#linearGradient4522"
        id="linearGradient5882"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.96842104,0,0,0.96842104,-1072.0623,-1019.7981)"
+       gradientTransform="matrix(0.9656025,0,0,0.9656025,-1072.0349,-1016.8024)"
        x1="2.0000153"
        y1="1062.8622"
        x2="16.999975"
@@ -50,8 +53,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="24.286129"
-     inkscape:cx="10.964078"
-     inkscape:cy="7.079144"
+     inkscape:cx="9.728805"
+     inkscape:cy="7.4909017"
      inkscape:document-units="px"
      inkscape:current-layer="use4526"
      showgrid="false"
@@ -59,11 +62,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
+     inkscape:window-width="958"
+     inkscape:window-height="1026"
      inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata4775">
     <rdf:RDF>
@@ -89,26 +92,26 @@
        inkscape:export-filename="maximize.png"
        id="use4526">
       <circle
-         cy="9.4999933"
-         cx="-1062.8627"
+         cy="9.4999895"
+         cx="-1062.8622"
          id="circle5874"
          style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#linearGradient5882);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;marker:none;enable-background:accumulate"
          transform="matrix(0,-1,1,0,0,0)"
-         r="7.2631388" />
+         r="7.2420001" />
       <rect
          style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
          id="rect5880"
-         width="18.4"
-         height="18.4"
-         x="0.29999"
-         y="1053.6622" />
+         width="18.6"
+         height="18.6"
+         x="0.19999"
+         y="1053.5623" />
     </g>
     <rect
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#3d3c37;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
        id="rect4532"
-       width="6.7789478"
-       height="0.9684211"
-       x="-281.24661"
-       y="531.87799" />
+       width="6.7592177"
+       height="0.96560258"
+       x="-281.23676"
+       y="531.87891" />
   </g>
 </svg>
