@@ -120,11 +120,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="18.973538"
-     inkscape:cx="9.4142576"
-     inkscape:cy="5.7468489"
+     inkscape:zoom="11.313709"
+     inkscape:cx="8.8907054"
+     inkscape:cy="1.2604976"
      inkscape:document-units="px"
-     inkscape:current-layer="g4783"
+     inkscape:current-layer="layer1"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -152,17 +152,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(287.35715,-522.86219)">
-    <use
-       x="0"
-       y="0"
-       xlink:href="#g4783"
-       id="use4830"
-       transform="translate(-71.163447,-1065.6156)"
-       width="100%"
-       height="100%"
-       inkscape:export-filename="minimize.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
     <g
        transform="translate(-287.35714,-530.49999)"
        inkscape:export-ydpi="90"
