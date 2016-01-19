@@ -34,7 +34,7 @@ style "terminal_scrollbar" = "scrollbar"
 style "terminal_screen"
 {
 	text[NORMAL] = "#ffffff"
-	base[NORMAL] = "#300a24"
+	base[NORMAL] = "#3c3b37"
 
 	TerminalScreen::background-darkness = 0.95
 }

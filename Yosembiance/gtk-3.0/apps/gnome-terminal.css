@@ -1,5 +1,5 @@
 /* gnome-terminal */
-@define-color terminal_bg #300a24;
+@define-color terminal_bg #2e3436;
 
 TerminalScreen {
     -TerminalScreen-background-darkness: 0.95;
