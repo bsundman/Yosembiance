@@ -90,19 +90,14 @@
  * button *
  **********/
 .button {
-    padding: 5px 6px;
-
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@button_bg_color, 1.08)),
-                                     color-stop (0.5, @button_bg_color),
-                                     to (shade (@button_bg_color, 0.94)));
+    padding: 5px 4px;
+    background-color: #eeeeee;
 
     color: @fg_color;
-    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
 
     border: 1px solid transparent;
     border-radius: 8px;
-    border-image-source: url("assets/button.png");
+    border-image-source: url("assets/button.svg");
 
     /* all button border images have the same size and are sliced in the same way */
     border-image-width: 10px 12px 10px 12px;
@@ -116,12 +111,9 @@
 }
 
 .button:backdrop {
-    background-image: none;
-    background-color: @bg_color;
-    border-image-source: url("assets/backdrop-button.png");
+    border-image-source: url("assets/button-backdrop.svg");
 
     color: @backdrop_fg_color;
-    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
 }
 
 .button.flat:backdrop {
@@ -129,39 +121,33 @@
 }
 
 .button:focus {
-    border-image-source: url("assets/button-focused.png");
+    background-image: none;
+    border-image-source: url("assets/button-focused.svg");
 }
 
 .button:hover {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@button_bg_color, 1.12)),
-                                     color-stop (0.5, @button_bg_color),
-                                     to (shade (@button_bg_color, 0.96)));
-    border-image-source: url("assets/button-hover.png");
+
 }
 
 .button:hover:backdrop {
-    background-color: shade (@bg_color, 1.04);
-    border-image-source: url("assets/backdrop-button-hover.png");
+
 }
 
 .button:hover:focus {
-    border-image-source: url("assets/button-focused-hover.png");
+
 }
 
 .button:insensitive {
     background-image: none;
-    background-color: mix (#ebebeb, @bg_color, 0.5);
+    background-color: #dcdcdc;
 
-    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
-    border-image-source: url("assets/button-disabled.png");
+    border-image-source: url("assets/button-disabled.svg");
 }
 
 .button:insensitive:backdrop {
-    background-color: #ebebeb;
+    background-color: #dcdcdc;
 
-    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
-    border-image-source: url("assets/backdrop-button-disabled.png");
+    border-image-source: url("assets/button-disabled-backdrop.svg");
 }
 
 .button.flat:insensitive,
@@ -171,47 +157,42 @@
 }
 
 .button:checked {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#cecece),
-                                     to (#e8e8e8));
-    border-image-source: url("assets/button-active.png");
+    background-color: @selected_bg_color;
+    color: #ffffff;
+    border-image-source: url("assets/button-checked.svg");
 }
 
 .button:checked:focus {
-    border-image-source: url("assets/button-active-focused.png");
+    border-image-source: url("assets/button-checked-focused.svg");
 }
 
 .button:active {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#dcdcdc),
-                                     to (#f3f3f3));
-    border-image-source: url("assets/button-active-hover.png");
 }
 
 .button:active:focus {
-    border-image-source: url("assets/button-active-focused-hover.png");
+    background-color: #efb69f;
+    border-image-source: url("assets/button-active-focused.svg");
 }
 
 .button:active:insensitive {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#e3e3e3),
-                                     to (#f3f3f3));
-    border-image-source: url("assets/button-active-disabled.png");
+    background-color: #dcdcdc;
+
+    border-image-source: url("assets/button-disabled.svg");
 }
 
 .button:checked:backdrop {
-    border-image-source: url("assets/backdrop-button-active.png");
+    background-color: #d2d2d2;
+    border-image-source: url("assets/button-checked-backdrop.svg");
 }
 
 .button:active:backdrop {
-    border-image-source: url("assets/backdrop-button-active-hover.png");
+    border-image-source: url("assets/button-backdrop.svg");
 }
 
 .button:checked:insensitive:backdrop {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (mix (#e3e3e3, @bg_color, 0.5)),
-                                     to (mix (#f3f3f3, @bg_color, 0.5)));
-    border-image-source: url("assets/backdrop-button-active-disabled.png");
+    background-color: #dcdcdc;
+
+    border-image-source: url("assets/button-disabled-backdrop.svg");
 }
 
 .button.default {
@@ -219,14 +200,14 @@
 }
 
 .button.default:hover {
-    border-image-source: url("assets/button-default-hover.png");
+    border-image-source: url("assets/button-default.png");
 }.
 .button.default:focus {
     border-image-source: url("assets/button-default-focused.png");
 }
 
 .button.default:focus:hover {
-    border-image-source: url("assets/button-default-focused-hover.png");
+    border-image-source: url("assets/button-default-focused.png");
 }
 
 /******************
@@ -238,7 +219,7 @@
     border-radius: 0;
     border-image-width: 10px 0 10px 0;
     border-width: 1px 0 1px 0;
-    box-shadow: inset -1px 0 shade (@bg_color, 0.84);
+/*    box-shadow: inset -1px 0 shade (@bg_color, 0.84); */
 }
 
 .linked > .entry:first-child,
@@ -265,18 +246,19 @@
 
 .primary-toolbar .linked .button,
 .header-bar .linked .button {
-    box-shadow: inset 1px 0 shade (@dark_bg_color, 1.4),
-                inset -1px 0 shade (@dark_bg_color, 0.9);
+/*    box-shadow: inset 1px 0 #5b5b59,
+                inset 0px 0 #5b5b59;
+*/
 }
 
 .primary-toolbar .linked .button:first-child,
 .header-bar .linked .button:first-child {
-    box-shadow: inset -1px 0 shade (@dark_bg_color, 0.9);
+/*    box-shadow: inset 0px 0 #5b5b59; */
 }
 
 .primary-toolbar .linked .button:last-child,
 .header-bar .linked .button:last-child {
-    box-shadow: inset 1px 0 shade (@dark_bg_color, 1.4)
+/*    box-shadow: inset 1px 0 shade #5b5b59 */
 }
 
 .primary-toolbar .linked .button:active,
@@ -304,17 +286,14 @@
 
 row:selected {
     background-image: -gtk-gradient (linear, left bottom, left top,
-                                     from (shade (@selected_bg_color, 1.06)),
-                                     to (shade (@selected_bg_color, 0.94)));
+                                     from (@selected_bg_color),
+                                     to (@selected_bg_color));
     border-top-color: shade (@selected_bg_color, 0.88);
-    border-style: solid;
-    border-width: 1px 0 0 0;
+    border: none;
 }
 
 row:selected:backdrop {
-    background-image: -gtk-gradient (linear, left bottom, left top,
-                                     from (shade (@backdrop_selected_bg_color, 1.06)),
-                                     to (shade (@backdrop_selected_bg_color, 0.94)));
+    background-color: @backdrop_selected_bg_color;
     border-top-color: shade (@backdrop_selected_bg_color, 0.9);
 }
 
@@ -1527,7 +1506,7 @@ GtkTextView {
 }
 
 /*
- * Header Bars
+ * Header Bars GNOME CSD
  *
  * The following rules only style header bars when they are used as a window's
  * titlebar widget (i.e., they have .titlebar set as well).
@@ -1538,21 +1517,19 @@ GtkTextView {
  */
 .titlebar.header-bar {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.5)),
-                                     to (@dark_bg_color));
-    border-color: shade (@dark_bg_color, 1.5);
-    border-style: solid;
-    border-width: 1px 0 0 0;
-    border-radius: 7px 7px 0 0;
+                                     from (shade (@dark_bg_color, 1.2)),
+                                     to (shade (@dark_bg_color, 1)));
+    border-style: none;
+    border-width: 0;
+    border-radius: 6px 6px 0 0;
 
     color: @dark_fg_color;
-    text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
 
-    box-shadow: inset 0 1px shade (@dark_bg_color, 1.65);
+    padding: 7px;
 }
 
 .titlebar.header-bar .title {
-    font: bold;
+    font: regular;
 }
 
 .titlebar.header-bar .subtitle {
@@ -1575,28 +1552,26 @@ GtkTextView {
 
 .titlebar.header-bar .button.titlebutton {
     background-clip: padding-box;
-    border: 1px solid #383734;
+    border: 0px solid #383734;
     color: #3d3c37;
-    icon-shadow: 0 1px rgba(255, 255, 255, 0.1);
     border-radius: 9px;
     padding: 0;
     box-shadow: none;
-    background-image: linear-gradient(to top, #5a5955, #75746d 50%, #8e8d88);
+    background-image: linear-gradient(to top, #75746d, #8e8d88);
 }
 
 .titlebar.header-bar .button.titlebutton.close {
     color: #323112;
-    icon-shadow: 0 1px rgba(255, 255, 255, 0.25);
-    background-image: linear-gradient(to top, #de4c19, #e55e30 50%, #f58d6e);
+    background-image: linear-gradient(to top, #de4c19, #e77345);
 }
 
 .titlebar.header-bar .button.titlebutton.close:hover {
-    background-image: linear-gradient(to top, #e24f1b, #f17750 50%, #fba992);
+    background-image: linear-gradient(to top, #f17750, #f17750);
 }
 
 .titlebar.header-bar .button.titlebutton:hover,
 .titlebar.header-bar .button.titlebutton:backdrop:hover {
-    background-image: linear-gradient(to top, #969696, #bdbdbd 50%, #cacaca);
+    background-image: linear-gradient(to top, #969696, #bdbdbd);
 }
 
 .titlebar.header-bar .button.titlebutton:active {
@@ -1641,16 +1616,18 @@ GtkTextView {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1)),
                                      to (shade (@dark_bg_color, 0.9)));
-    border-bottom-color: shade (@dark_bg_color, 1.1);
-    border-top-color: @dark_bg_color;
+
+    border-bottom-color: transparent;
+    border-top-color: transparent;
     border-style: solid;
-    border-width: 1px 0 1px 0;
+    border-width: 0;
     border-radius: 0;
 
     color: @dark_fg_color;
-    text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
+/*    text-shadow: 0 -1px shade (@dark_bg_color, 0.7); */
 
     box-shadow: none;
+    padding: 7px;
 }
 
 .primary-toolbar:backdrop,
@@ -1666,17 +1643,19 @@ GtkTextView {
 
 .primary-toolbar :insensitive,
 .header-bar :insensitive {
-    text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
+/*    text-shadow: 0 -1px shade (@dark_bg_color, 0.7); */
 }
 
 .primary-toolbar .button,
 .header-bar .button,
 .primary-toolbar .button.flat:hover {
-    background: transparent;
+    background-color: #3e3d3a;
     color: @dark_fg_color;
-    text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
-    border-image-source: url("assets/button-toolbar.png");
-    padding: 9px;
+/*    text-shadow: 0 -1px shade (@dark_bg_color, 0.7); */
+    border-image-source: url("assets/button-toolbar.svg");
+    padding: 5px 9px 5px 9px;
+    border-style: solid;
+    border-color: transparent;
 }
 
 .primary-toolbar .button.flat {
@@ -1686,29 +1665,38 @@ GtkTextView {
 
 .primary-toolbar .button:focused,
 .header-bar .button:focused {
-    border-image-source: url("assets/button-toolbar-focused.png");
+    border-image-source: url("assets/button-toolbar-focused.svg");
 }
 
 .primary-toolbar .button:active,
-.primary-toolbar .button:checked,
+.primary-toolbar .button:checked:active,
 .header-bar .button:active,
+.header-bar .button:checked:active, {
+    background-color: #444442;
+    border-image-source: url("assets/button-toolbar-active.svg");
+}
+.primary-toolbar .button:checked,
 .header-bar .button:checked {
-    border-image-source: url("assets/button-toolbar-active.png");
+    background-color: #626260;
+    border-image-source: url("assets/button-toolbar-checked.svg");
 }
 
 .primary-toolbar .button:active:focused,
+.header-bar .button:active:focused {
+    background-color: #444442;
+    border-image-source: url("assets/button-toolbar-active-focused.svg");
+}
 .primary-toolbar .button:checked:focused,
-.header-bar .button:active:focused,
 .header-bar .button:checked:focused {
-    border-image-source: url("assets/button-toolbar-active-focused.png");
+    background-color: #626260;
+    border-image-source: url("assets/button-toolbar-checked-focused.svg");
 }
 
 .primary-toolbar .button:backdrop,
 .header-bar .button:backdrop {
-    background-color: transparent;
+    background-color: #3e3d3a;
     color: @backdrop_dark_fg_color;
-    text-shadow: 0 -1px shade (@dark_bg_color, 0.9);
-    border-image-source: url("assets/backdrop-button-toolbar.png");
+    border-image-source: url("assets/button-toolbar-backdrop.svg");
 }
 
 .primary-toolbar .button.flat:backdrop {
@@ -1719,38 +1707,29 @@ GtkTextView {
 .primary-toolbar .button:checked:backdrop,
 .header-bar .button:active:backdrop,
 .header-bar .button:checked:backdrop {
-    border-image-source: url("assets/backdrop-button-toolbar-active.png");
+    background-color: #53514d;
+    border-image-source: url("assets/button-toolbar-active-backdrop.svg");
 }
 
 .primary-toolbar .button:hover,
 .primary-toolbar .button:checked,
 .header-bar .button:hover,
 .header-bar .button:checked {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.2)),
-                                     to (shade (@dark_bg_color, 1.1)));
 }
 
 .primary-toolbar .button:active,
 .header-bar .button:active {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 0.95)),
-                                     to (shade (@dark_bg_color, 1.0)));
-    text-shadow: 0 -1px shade (@dark_bg_color, 0.6);
 }
 
 .primary-toolbar .button:checked:insensitive,
 .primary-toolbar .button:insensitive,
 .header-bar .button:checked:insensitive,
 .header-bar .button:insensitive {
-    text-shadow: none;
+/*    text-shadow: none; */
 }
 
 .primary-toolbar .button:insensitive,
 .header-bar .button:insensitive {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.01)),
-                                     to (shade (@dark_bg_color, 0.99)));
 }
 
 .primary-toolbar .button.flat:insensitive {
@@ -1759,9 +1738,6 @@ GtkTextView {
 
 .primary-toolbar .button:checked:insensitive,
 .header-bar .button:checked:insensitive {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 0.94)),
-                                     to (shade (@dark_bg_color, 1.02)));
 }
 
 .primary-toolbar GtkSeparatorToolItem,
@@ -1773,6 +1749,7 @@ GtkTextView {
     border-color: alpha (shade (@dark_bg_color, 0.94), 0.35);
     border-bottom-color: alpha (shade (@dark_bg_color, 1.26), 0.5);
     border-right-color: alpha (shade (@dark_bg_color, 1.26), 0.5);
+
 }
 
 /* inline-toolbar */
