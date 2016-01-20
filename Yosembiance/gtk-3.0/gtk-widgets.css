@@ -196,7 +196,7 @@
 }
 
 .button.default {
-    border-image-source: url("assets/button-default.png");
+    border-image-source: url("assets/button-default.svg");
 }
 
 .button.default:hover {
@@ -207,7 +207,7 @@
 }
 
 .button.default:focus:hover {
-    border-image-source: url("assets/button-default-focused.png");
+    border-image-source: url("assets/button-default-focused.svg");
 }
 
 /******************
