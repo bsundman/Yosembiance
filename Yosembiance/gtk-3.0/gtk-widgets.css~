@@ -196,18 +196,22 @@
 }
 
 .button.default {
+    background-color: #efb69f;
     border-image-source: url("assets/button-default.svg");
 }
 
 .button.default:hover {
+    background-color: #efb69f;
     border-image-source: url("assets/button-default.svg");
 }.
 .button.default:focus {
+    background-color: #efb69f;
     border-image-source: url("assets/button-default-focused.svg");
 }
 
 .button.default:focus:hover {
-    border-image-source: url("assets/button-default-focused.png");
+    background-color: #efb69f;
+    border-image-source: url("assets/button-default-focused.svg");
 }
 
 /******************
