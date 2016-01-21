@@ -8,7 +8,7 @@ Changelog
 
 January 20, 2016
 ----------------------
-New button, combo box, and entry box widgets.  New Gnome-Shell window controls.
+New GTK3 button, combo box, and entry box widgets.  New Gnome-Shell window controls.
 
 January 17, 2016
 ----------------------
