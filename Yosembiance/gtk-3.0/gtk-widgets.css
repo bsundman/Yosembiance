@@ -1645,6 +1645,7 @@ GtkTextView {
     padding: 7px;
 
     border: none;
+    border-radius: 0;
 }
 
 .primary-toolbar:backdrop,
