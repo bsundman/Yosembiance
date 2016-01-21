@@ -1622,6 +1622,7 @@ GtkTextView {
     background-color: @bg_color;
     color: @fg_color;
     text-shadow: none;
+    border-radius: 0;
 }
 
 .toolbar:backdrop {
@@ -1642,6 +1643,8 @@ GtkTextView {
     color: @dark_fg_color;
 
     padding: 7px;
+
+    border: none;
 }
 
 .primary-toolbar:backdrop,
