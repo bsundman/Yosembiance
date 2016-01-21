@@ -125,7 +125,7 @@
 }
 
 .button:focus {
-    border-color: #f07746;
+    border-color: @selected_bg_color;
 }
 
 .button:hover {
@@ -135,6 +135,7 @@
 }
 
 .button:hover:focus {
+    border-color: @selected_bg_color;
 }
 
 .button:insensitive {
