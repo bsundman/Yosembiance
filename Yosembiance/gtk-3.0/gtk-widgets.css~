@@ -1616,7 +1616,7 @@ GtkTextView {
  * toolbar *
  ***********/
 .toolbar {
-    border-style: none;
+    border: none;
     padding: 1px;
 
     background-color: @bg_color;
