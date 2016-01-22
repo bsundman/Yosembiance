@@ -1,12 +1,31 @@
 /* Gnome 3 enhancements.  Larger border-radius radius for better antialiasing */
+/* try csd-solid */
+/* try overshoot and undershoot */
 .window-frame {
+    border-radius: 6px 6px 0 0;
+    border-width: 0px;
+    box-shadow: 0 2px 8px 3px alpha(black, 0.5);
+}
+.window-frame.ssd {
     border-radius: 6px 6px 0 0;
     box-shadow: 0 2px 8px 3px alpha(black, 0.5);
 }
+
+.window-frame.ssd.maximized {
+    border-radius: 0;
+}
+
 .window-frame:backdrop {
     box-shadow: 0 2px 5px 1px alpha(black, 0.5);
 }
-.window-frame.tiled {
+
+.window-frame.solid-csd {
+    border-radius: 6px 6px 0 0;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none; }
+
+/*.window-frame.tiled {
     border-radius: 6px 6px 0 0;
 }
 
@@ -16,7 +35,7 @@
 
 .tiled .titlebar {
     border-radius: 6px 6px 0 0;
-}
+}*/
 
 .maximized .titlebar {
     border-radius: 0;
@@ -125,7 +144,7 @@
 }
 
 .button:focus {
-    border-color: #f07746;
+    border-color: @selected_bg_color;
 }
 
 .button:hover {
@@ -135,6 +154,7 @@
 }
 
 .button:hover:focus {
+    border-color: @selected_bg_color;
 }
 
 .button:insensitive {
@@ -494,6 +514,15 @@ GdMainIconView.content-view {
     border-width: 0;
 
     color: @selected_fg_color;
+}
+
+/* Application notification */
+.app-notification,
+.app-notification.frame {
+    padding: 3px;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    background-color: @bg_color;
 }
 
 /************
@@ -1174,10 +1203,15 @@ GtkScale.mark {
     -GtkScrollbar-min-slider-length: 31;
     -GtkRange-slider-width: 10;
 
+    background-color: @scrollbar_track_color;
     background-image: none;
     background-size: 0;
     border: none;
     border-radius: 0;
+}
+
+.scrollbar.overlay-indicator {
+    background-color: transparent;
 }
 
 .scrollbar:hover,
@@ -1369,6 +1403,12 @@ GtkPlacesSidebar.sidebar row:selected:backdrop {
     color: @fg_color;
     text-shadow: 0 1px shade (shade (@bg_color, 0.95), 0.96);
 }
+
+GtkPlacesSidebar.sidebar .sidebar-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 /**************
  * spinbutton *
