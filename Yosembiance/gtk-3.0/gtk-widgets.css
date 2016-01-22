@@ -285,6 +285,7 @@
 .primary-toolbar .linked .button:only-child:checked,
 .header-bar .linked .button:only-child:checked {
     border-radius: 4px;
+    border-left-color: shade(@dark_bg_color, 1.6);
 }
 
 /*** primary-toolbar and header-bar buttons ***/
@@ -305,7 +306,8 @@
 .primary-toolbar .linked .button:first-child,
 .header-bar .linked .button:first-child {
     border-left-color: shade(@dark_bg_color, 1.6);
-    border-radius: 4px 0 0 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .primary-toolbar .linked .button:first-child:backdrop,
@@ -315,8 +317,8 @@
 
 .primary-toolbar .linked .button:last-child,
 .header-bar .linked .button:last-child {
-    border-left-color: @dark_bg_color;
-    border-radius: 0 4px 4px 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
     border-width: 1px 1px 0 1px;
 }
 

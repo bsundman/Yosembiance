@@ -1,7 +1,7 @@
 /*default color scheme */
 @define-color bg_color #dadada;
 @define-color fg_color #4c4c4c;
-@define-color base_color #f9f9f9;
+@define-color base_color #ffffff;
 @define-color text_color #3C3C3C;
 @define-color selected_bg_color #f07746;
 @define-color selected_fg_color #ffffff;
