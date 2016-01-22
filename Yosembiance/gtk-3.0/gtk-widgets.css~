@@ -281,8 +281,12 @@
 .linked > .button:only-child,
 .linked > GtkComboBox:only-child > .button,
 .primary-toolbar .linked .button:only-child,
-.header-bar .linked .button:only-child {
+.header-bar .linked .button:only-child,
+.primary-toolbar .linked .button:only-child:checked,
+.header-bar .linked .button:only-child:checked {
     border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 /*** primary-toolbar and header-bar buttons ***/
@@ -320,7 +324,26 @@
 
 /* buttons focus border */
 
-.header-bar .linked .button:focused,
+.primary-toolbar .linked .button:focused,
+.header-bar .linked .button:focused {
+    border-color: @selected_bg_color;
+    border-left-color: @selected_bg_color;
+    box-shadow: 0 1px 0 0 @selected_bg_color;
+}
+
+.primary-toolbar .linked .button:first-child:focused,
+.header-bar .linked .button:first-child:focused {
+    border-color: @selected_bg_color;
+    border-left-color: @selected_bg_color;
+}
+
+.primary-toolbar .linked .button:last-child:focused,
+.header-bar .linked .button:last-child:focused {
+    border-color: @selected_bg_color;
+    border-left-color: @selected_bg_color;
+}
+
+/*.header-bar .linked .button:focused,
 .primary-toolbar .linked .button:focused {
     box-shadow: inset -1px 0 0 0 @selected_bg_color,
 		0 1px 0 0 #201e1c;
@@ -333,8 +356,9 @@
 }
 
 .header-bar .linked .button:last-child {
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3); /* remove box shadow focus border hack */
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
 }
+*/
 
 /* backdrop buttons */
 
@@ -1761,6 +1785,8 @@ GtkTextView {
 
 .primary-toolbar .button.flat,
 .header-bar .button.flat,
+.primary-toolbar .button.flat:insensitive,
+.header-bar .button.flat:insensitive,
 .primary-toolbar .button.flat:backdrop,
 .header-bar .button.flat:backdrop {
     background-image: none;
@@ -1808,7 +1834,7 @@ GtkTextView {
     background-color: shade(@dark_bg_color, 1.1);
     color: @backdrop_dark_fg_color;
     border-color: shade(@dark_bg_color, 1.2);
-    box-shadow: 0 1px 0 0 shade(@dark_bg_color, 0.7);
+    box-shadow: 0 1px 0 0 shade(@dark_bg_color, 0.9);
 }
 
 .primary-toolbar .button:active:backdrop,
@@ -1816,7 +1842,7 @@ GtkTextView {
 .header-bar .button:active:backdrop,
 .header-bar .button:checked:backdrop {
     background-image: none;
-    background-color: rgba(255,255,255,0.1)
+    background-color: @dark_bg_color;
 }
 
 .primary-toolbar .button:hover:backdrop,
@@ -1851,7 +1877,7 @@ GtkTextView {
 .primary-toolbar .button:insensitive,
 .header-bar .button:insensitive {
     background-image: none;
-    background-color: transparent;
+    background-color: shade(@dark_bg_color,1.1);
 }
 
 .primary-toolbar .button.flat:insensitive {
@@ -1937,7 +1963,7 @@ GtkTextView {
 .inline-toolbar.toolbar GtkToolButton:first-child .button:backdrop:insensitive {
     border-left-width: 1px;
     border-right-width: 0;
-    border-radius: 8px;
+    border-radius: 4px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
@@ -1957,9 +1983,7 @@ GtkTextView {
 .inline-toolbar.toolbar GtkToolButton:last-child .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton:last-child .button:backdrop,
 .inline-toolbar.toolbar GtkToolButton:last-child .button:backdrop:insensitive {
-    border-left-width: 0;
-    border-right-width: 1px;
-    border-radius: 8px;
+    border-radius: 4px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
@@ -1979,9 +2003,7 @@ GtkTextView {
 .inline-toolbar.toolbar GtkToolButton:only-child .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton:only-child .button:backdrop,
 .inline-toolbar.toolbar GtkToolButton:only-child .button:backdrop:insensitive {
-    border-right-width: 1px;
-    border-left-width: 1px;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 /***********
