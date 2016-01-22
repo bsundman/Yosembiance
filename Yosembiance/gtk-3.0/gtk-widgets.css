@@ -302,7 +302,7 @@
 
 .primary-toolbar .linked .button:first-child,
 .header-bar .linked .button:first-child {
-    border-left-color: shade(@dark_bg_color, 1.4);
+    border-left-color: shade(@dark_bg_color, 1.6);
     border-radius: 4px 0 0 4px;
 }
 
@@ -1792,7 +1792,7 @@ GtkTextView {
 .primary-toolbar .button:checked,
 .header-bar .button:checked {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.6)),
+                                     from (shade (@dark_bg_color, 1.8)),
                                      to (shade (@dark_bg_color, 1.4)));
     background-color: #626260;
 }
