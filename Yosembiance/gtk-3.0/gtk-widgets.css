@@ -1705,32 +1705,34 @@ GtkTextView {
 
 .primary-toolbar .button,
 .header-bar .button {
-    background-color: rgba(255,255,255,0.05);
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.2)),
+                                     to (shade (@dark_bg_color, 1)));
+    background-color: @dark_bg_color;
     color: @dark_fg_color;
-    border-color: rgba(255,255,255,0.2);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+    border-color: shade (@dark_bg_color, 1.4);
+/*    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3); */
     padding: 7px;
-    border-radius: 4px;
 }
 .primary-toolbar .button.flat:hover,
 .primary-toolbar .button.flat:hover:backdrop {
-    background-color: rgba(255,255,255,0.1);
+    background-color: shade (@dark_bg_color, 1.2);
     color: @dark_fg_color;
-    border-color: rgba(255,255,255,0.2);
     box-shadow: 0 1px 0 0 #201e1c;
     padding: 7px;
+    border-color: shade (@dark_bg_color, 1.4);
 }
 
 .primary-toolbar .button.flat,
 .header-bar .button.flat,
 .primary-toolbar .button.flat:backdrop,
 .header-bar .button.flat:backdrop {
+    background-image: none;
     background-color: transparent;
     border-color: transparent;
     border-width: 1px;
     border-style: solid;
     box-shadow: none;
-    border-radius: 4px;
 }
 
 .primary-toolbar .button:focused,
@@ -1739,15 +1741,23 @@ GtkTextView {
 }
 
 .primary-toolbar .button:active,
+.primary-toolbar .button:hover:active,
 .primary-toolbar .button:active:focused,
 .primary-toolbar .button:checked:active,
 .header-bar .button:active,
+.header-bar .button:hover:active,
 .header-bar .button:active:focused,
 .header-bar .button:checked:active {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 0.8)),
+                                     to (shade (@dark_bg_color, 1)));
     background-color: rgba(0,0,0,0.2);
 }
 .primary-toolbar .button:checked,
 .header-bar .button:checked {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.6)),
+                                     to (shade (@dark_bg_color, 1.4)));
     background-color: #626260;
 }
 
@@ -1758,6 +1768,7 @@ GtkTextView {
 
 .primary-toolbar .button:backdrop,
 .header-bar .button:backdrop {
+    background-image: none;
     background-color: #3e3d3a;
     color: @backdrop_dark_fg_color;
     box-shadow: none;
@@ -1767,11 +1778,21 @@ GtkTextView {
 .primary-toolbar .button:checked:backdrop,
 .header-bar .button:active:backdrop,
 .header-bar .button:checked:backdrop {
+    background-image: none;
     background-color: rgba(255,255,255,0.1)
+}
+
+.primary-toolbar .button:hover:backdrop,
+.header-bar .button:hover:backdrop {
+    background-image: none;
+    background-color: rgba(255,255,255,0.05)
 }
 
 .primary-toolbar .button:hover,
 .header-bar .button:hover {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.4)),
+                                     to (shade (@dark_bg_color, 1.2)));
     background-color: rgba(255,255,255,0.1)
 }
 .primary-toolbar .button:checked,
@@ -1792,6 +1813,8 @@ GtkTextView {
 
 .primary-toolbar .button:insensitive,
 .header-bar .button:insensitive {
+    background-image: none;
+    background-color: transparent;
 }
 
 .primary-toolbar .button.flat:insensitive {

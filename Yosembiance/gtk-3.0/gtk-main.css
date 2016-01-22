@@ -31,7 +31,7 @@
 @define-color button_bg_color shade (@bg_color, 1.02); /*shade (#cdcdcd, 1.08);*/
 @define-color notebook_button_bg_color shade (@bg_color, 1.02);
 @define-color button_insensitive_bg_color mix (@button_bg_color, @bg_color, 0.6);
-@define-color dark_bg_color #3c3b37;
+@define-color dark_bg_color #3c3c3c;
 @define-color dark_fg_color #dfdbd2;
 
 @define-color backdrop_fg_color mix (@bg_color, @fg_color, 0.8);
