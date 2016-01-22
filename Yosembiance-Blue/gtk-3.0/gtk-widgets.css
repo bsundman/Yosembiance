@@ -228,6 +228,9 @@
 /******************
  * Linked Widgets *
  *****************/
+
+/* Combo Box */
+
 .linked > .entry,
 .linked > .button,
 .linked > GtkComboBox > .button {
@@ -270,53 +273,83 @@
     box-shadow: none;
 }
 
+/* Combo Box, Button, Entry Common only-child */
+
+/* round only child */
+
 .linked > .entry:only-child,
 .linked > .button:only-child,
-.linked > GtkComboBox:only-child > .button {
+.linked > GtkComboBox:only-child > .button,
+.primary-toolbar .linked .button:only-child,
+.header-bar .linked .button:only-child {
     border-radius: 4px;
 }
 
+/*** primary-toolbar and header-bar buttons ***/
+
+/* button borders / rounding */
+
 .primary-toolbar .linked .button,
 .header-bar .linked .button {
+    border-left-color: @dark_bg_color;
     border-radius: 0;
 }
+
+.primary-toolbar .linked .button:backdrop,
+.header-bar .linked .button:backdrop {
+    border-left-color: @dark_bg_color;
+}
+
+.primary-toolbar .linked .button:first-child,
+.header-bar .linked .button:first-child {
+    border-left-color: shade(@dark_bg_color, 1.6);
+    border-radius: 4px 0 0 4px;
+}
+
+.primary-toolbar .linked .button:first-child:backdrop,
+.header-bar .linked .button:first-child:backdrop {
+    border-left-color: shade(@dark_bg_color, 1.2)
+}
+
+.primary-toolbar .linked .button:last-child,
+.header-bar .linked .button:last-child {
+    border-left-color: @dark_bg_color;
+    border-radius: 0 4px 4px 0;
+    border-width: 1px 1px 0 1px;
+}
+
+/* buttons focus border */
+
 .header-bar .linked .button:focused,
 .primary-toolbar .linked .button:focused {
     box-shadow: inset -1px 0 0 0 @selected_bg_color,
 		0 1px 0 0 #201e1c;
 }
 
-.header-bar .linked .button:backdrop,
-.primary-toolbar .linked .button:backdrop {
-    box-shadow: none;
-}
-.primary-toolbar .linked .button:first-child,
-.header-bar .linked .button:first-child {
-    border-radius: 4px 0 0 4px;
-}
 .primary-toolbar .linked .button:first-child:focused,
 .header-bar .linked .button:first-child:focused {
     box-shadow: inset -1px 0 0 0 @selected_bg_color,
 		0 1px 0 0 #201e1c;
 }
 
-.primary-toolbar .linked .button:last-child,
 .header-bar .linked .button:last-child {
-    border-radius: 0 4px 4px 0;
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3); /* remove box shadow focus border hack */
 }
+
+/* backdrop buttons */
+
+.header-bar .linked .button:backdrop,
+.primary-toolbar .linked .button:backdrop {
+    box-shadow: 0 1px 0 0 shade(@dark_bg_color, 0.9);
+}
+
 .header-bar .linked .button:last-child:backdrop {
-    box-shadow: none;
 }
 
 .primary-toolbar .linked .button:active,
 .header-bar .linked .button:active,
 .primary-toolbar .linked .button:insensitive,
 .header-bar .linked .button:insensitive {
-}
-.primary-toolbar .linked .button:only-child,
-.header-bar .linked .button:only-child {
-    border-radius: 4px;
 }
 
 /****************
@@ -1703,27 +1736,34 @@ GtkTextView {
 .header-bar :insensitive {
 }
 
+/* primary-toolbar header-bar buttons */
+
 .primary-toolbar .button,
 .header-bar .button {
-    background-color: rgba(255,255,255,0.05);
+    border: solid shade(@dark_bg_color, 1.6);
+    border-width: 1px 1px 0 1px;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.4)),
+                                     to (shade (@dark_bg_color, 1.2)));
+    background-color: transparent;
     color: @dark_fg_color;
-    border-color: rgba(255,255,255,0.2);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 1px 0 0 shade(@dark_bg_color, 0.7);
     padding: 7px;
 }
 .primary-toolbar .button.flat:hover,
 .primary-toolbar .button.flat:hover:backdrop {
-    background-color: rgba(255,255,255,0.1);
+    background-color: shade (@dark_bg_color, 1.2);
     color: @dark_fg_color;
-    border-color: rgba(255,255,255,0.2);
     box-shadow: 0 1px 0 0 #201e1c;
     padding: 7px;
+    border-color: shade (@dark_bg_color, 1.4);
 }
 
 .primary-toolbar .button.flat,
 .header-bar .button.flat,
 .primary-toolbar .button.flat:backdrop,
 .header-bar .button.flat:backdrop {
+    background-image: none;
     background-color: transparent;
     border-color: transparent;
     border-width: 1px;
@@ -1737,15 +1777,23 @@ GtkTextView {
 }
 
 .primary-toolbar .button:active,
+.primary-toolbar .button:hover:active,
 .primary-toolbar .button:active:focused,
 .primary-toolbar .button:checked:active,
 .header-bar .button:active,
+.header-bar .button:hover:active,
 .header-bar .button:active:focused,
 .header-bar .button:checked:active {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 0.9)),
+                                     to (shade (@dark_bg_color, 1)));
     background-color: rgba(0,0,0,0.2);
 }
 .primary-toolbar .button:checked,
 .header-bar .button:checked {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.8)),
+                                     to (shade (@dark_bg_color, 1.4)));
     background-color: #626260;
 }
 
@@ -1756,20 +1804,32 @@ GtkTextView {
 
 .primary-toolbar .button:backdrop,
 .header-bar .button:backdrop {
-    background-color: #3e3d3a;
+    background-image: none;
+    background-color: shade(@dark_bg_color, 1.1);
     color: @backdrop_dark_fg_color;
-    box-shadow: none;
+    border-color: shade(@dark_bg_color, 1.2);
+    box-shadow: 0 1px 0 0 shade(@dark_bg_color, 0.7);
 }
 
 .primary-toolbar .button:active:backdrop,
 .primary-toolbar .button:checked:backdrop,
 .header-bar .button:active:backdrop,
 .header-bar .button:checked:backdrop {
+    background-image: none;
     background-color: rgba(255,255,255,0.1)
+}
+
+.primary-toolbar .button:hover:backdrop,
+.header-bar .button:hover:backdrop {
+    background-image: none;
+    background-color: shade(@dark_bg_color, 1.2);
 }
 
 .primary-toolbar .button:hover,
 .header-bar .button:hover {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.6)),
+                                     to (shade (@dark_bg_color, 1.4)));
     background-color: rgba(255,255,255,0.1)
 }
 .primary-toolbar .button:checked,
@@ -1790,6 +1850,8 @@ GtkTextView {
 
 .primary-toolbar .button:insensitive,
 .header-bar .button:insensitive {
+    background-image: none;
+    background-color: transparent;
 }
 
 .primary-toolbar .button.flat:insensitive {

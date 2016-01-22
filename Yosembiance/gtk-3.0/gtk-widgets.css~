@@ -302,7 +302,7 @@
 
 .primary-toolbar .linked .button:first-child,
 .header-bar .linked .button:first-child {
-    border-left-color: shade(@dark_bg_color, 1.4);
+    border-left-color: shade(@dark_bg_color, 1.6);
     border-radius: 4px 0 0 4px;
 }
 
