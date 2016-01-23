@@ -148,27 +148,22 @@ GtkComboBox.combobox-entry .button:active:focus {
 }
 
 .trough {
-    border-image: url("assets/progressbar-horizontal-trough.png") 6 7 6 7 / 6px 7px 6px 7px stretch;
 }
 
 GtkSwitch.trough {
-    border-image: url("assets/switch-trough-off.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 GtkSwitch.trough:active {
-    border-image: url("assets/switch-trough-on.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar GtkSwitch.trough,
 .menubar.toolbar GtkSwitch.trough,
 .header-bar GtkSwitch.trough {
-    border-image: url("assets/switch-trough-toolbar-off.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar GtkSwitch.trough:active,
 .menubar.toolbar GtkSwitch.trough:active,
 .header-bar GtkSwitch.trough:active {
-    border-image: url("assets/switch-trough-toolbar-on.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 /* XXX temporary */
@@ -176,7 +171,6 @@ GtkSwitch.trough:backdrop,
 GtkSwitch.trough:active:backdrop,
 GtkSwitch.trough:insensitive,
 GtkSwitch.trough:active:insensitive {
-    border-image: url("assets/switch-trough-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 GtkSwitch.slider {
