@@ -1134,7 +1134,7 @@ GtkProgressBar {
     border-radius: 8px;
     border-width: 0px;
     background-image: none;
-    background-color: #db6a3c;
+    background-color: #5693c2;
     border-style: solid;
 }
 
@@ -1204,7 +1204,7 @@ GtkLevelBar.vertical {
     border-style: solid;
 
     border-color: @selected_bg_color;
-    background-color: #db6a3c;
+    background-color: #5693c2;
 }
 
 .level-bar.indicator-continuous.fill-block {
@@ -1269,7 +1269,7 @@ GtkScale.vertical {
 }
 
 .scale.trough.highlight {
-    background-color: #df784e;
+    background-color: #5e97c3;
     background-image: none;
     background-clip: content-box;
 }
