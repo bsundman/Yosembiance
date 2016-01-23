@@ -6,6 +6,10 @@ A modified Ambiance theme (loosely) inspired by OSX Yosemite.
 Changelog
 =========
 
+January 23, 2016
+----------------------
+New and updated widgets
+
 January 21, 2016
 ----------------------
 Added Yosembiance-Blue theme
