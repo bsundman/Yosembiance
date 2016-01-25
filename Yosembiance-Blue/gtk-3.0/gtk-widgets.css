@@ -1067,9 +1067,6 @@ GtkComboBox .menu .menuitem *:insensitive {
     background-color: @dark_bg_secondary;
 }
 
-.notebook.header tab {
-}
-
 .notebook.header.frame {
     border-color: transparent;
     border-radius: 0;
@@ -1103,7 +1100,7 @@ GtkComboBox .menu .menuitem *:insensitive {
     border-width: 1px;
     border-color: @dark_bg_selected;
     border-radius: 0;
-    background-color: transparent;
+    background-color: @dark_bg_secondary;
     background-image: none;
 }
 
