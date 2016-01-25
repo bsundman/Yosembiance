@@ -31,7 +31,7 @@
 @define-color button_bg_color shade (@bg_color, 1.02); /*shade (#cdcdcd, 1.08);*/
 @define-color notebook_button_bg_color shade (@bg_color, 1.02);
 @define-color button_insensitive_bg_color mix (@button_bg_color, @bg_color, 0.6);
-@define-color dark_bg_color #3c3c3c;
+@define-color dark_bg_color #2e3233; /* #3c3c3c; */
 @define-color dark_fg_color #dfdbd2;
 
 @define-color backdrop_fg_color mix (@bg_color, @fg_color, 0.8);
@@ -52,6 +52,13 @@
 @define-color osd_border_color alpha(black, 0.7);
 
 @define-color scrollbar_track_color mix(@base_color, black, 0.1); /* #e6e6e6 */
+
+/* yosembiance colors */
+@define-color dark_bg_secondary #383d3e;
+@define-color dark_bg_selected #535a5e;
+@define-color dark_button_border alpha(white, 0.15);
+@define-color dark_button_normal alpha(white, 0.05);
+
 
 @import url("gtk-widgets-borders.css");
 @import url("gtk-widgets-assets.css");

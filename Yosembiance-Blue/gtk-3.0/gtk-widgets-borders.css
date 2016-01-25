@@ -123,22 +123,6 @@ GtkComboBox.combobox-entry .button:active:focus {
     border-left-width: 0;
 }
 
-.notebook tab.top:active {
-    border-image: url("assets/notebook-tab-top.png") 8 10 1 10 / 8px 10px 1px 10px stretch;
-}
-
-.notebook tab.right:active {
-    border-image: url("assets/notebook-tab-right.png") 10 8 10 1 / 10px 8px 10px 1px stretch;
-}
-
-.notebook tab.bottom:active {
-    border-image: url("assets/notebook-tab-bottom.png") 1 10 8 10 / 1px 10px 8px 10px stretch;
-}
-
-.notebook tab.left:active {
-    border-image: url("assets/notebook-tab-left.png") 10 1 10 8 / 10px 1px 10px 8px stretch;
-}
-
 .trough,
 .trough.highlight {
     border-radius: 4px;
