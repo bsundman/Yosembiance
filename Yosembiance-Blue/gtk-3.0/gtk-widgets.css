@@ -349,11 +349,14 @@
 
 	.primary-toolbar .linked .button:active,
 	.header-bar .linked .button:active,
-	.primary-toolbar .linked .button:checked,
-	.header-bar .linked .button:checked,
+	.primary-toolbar .linked .button:selected,
+	.header-bar .linked .button:selected,
+	.primary-toolbar .linked .button:prelight,
+	.header-bar .linked .button:prelight,
 	.primary-toolbar .linked .button:hover,
 	.header-bar .linked .button:hover {
 	    border-left-color: shade(@dark_bg_color,1.1); 
+	    background-color: alpha(white, 0.12);
 	    box-shadow: none;
 	}
 
@@ -1997,6 +2000,10 @@ GtkTextView {
 }
 .primary-toolbar .button:checked,
 .header-bar .button:checked,
+.primary-toolbar .button:selected,
+.header-bar .button:selected,
+.primary-toolbar .button:prelight,
+.header-bar .button:prelight,
 .primary-toolbar .button:hover,
 .header-bar .button:hover {
     background-image: none;
