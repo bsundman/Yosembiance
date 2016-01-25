@@ -1058,7 +1058,6 @@ GtkComboBox .menu .menuitem *:insensitive {
 
 .notebook.frame {
     border: 1px solid shade(@bg_color, 0.82);
-    border-top: none;
     border-radius: 0;
 }
 
@@ -1105,13 +1104,13 @@ GtkComboBox .menu .menuitem *:insensitive {
 }
 
 .notebook tab:active {
-    padding: 4px 6px 4px 6px;
     background-color: @dark_bg_selected;
     background-image: none;
     border-image: none;
 }
 
 .notebook tab.top {
+    padding: 5px 6px 7px 6px;
     border-image: -gtk-gradient (linear, left top, left bottom,
                                  from (@dark_bg_secondary),
                                  to (@dark_bg_selected)) 1;
@@ -1128,68 +1127,73 @@ GtkComboBox .menu .menuitem *:insensitive {
 }
 
 .notebook tab.right {
-    border-image: -gtk-gradient (linear, left top, left bottom,
+    padding: 6px 5px 6px 7px;
+    border-image: -gtk-gradient (linear, right top, left top,
                                  from (@dark_bg_secondary),
                                  to (@dark_bg_selected)) 1;
-    border-left-width: 2px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+    border-left-width: 0;
 }
 
 .notebook tab.right:hover {
-    border-left-color: alpha(@theme_selected_bg_color, 0.3);
+    box-shadow:inset 3px 0 @selected_bg_color;
 }
 
 .notebook tab.right:active {
-    border-left-color: @theme_selected_bg_color;
+    border-image: none;
+    box-shadow:inset 3px 0 @selected_bg_color;
 }
 
 .notebook tab.bottom {
-    border-top-width: 2px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
+    padding: 7px 6px 5px 6px;
+    border-image: -gtk-gradient (linear, left bottom, left top,
+                                 from (@dark_bg_secondary),
+                                 to (@dark_bg_selected)) 1;
+    border-top-width: 0;
 }
 
 .notebook tab.bottom:hover {
-    border-top-color: alpha(@theme_selected_bg_color, 0.3);
+    box-shadow:inset 0 3px @selected_bg_color;
 }
 
 .notebook tab.bottom:active {
-    border-top-color: @theme_selected_bg_color;
+    border-image: none;
+    box-shadow:inset 0 3px @selected_bg_color;
 }
 
 .notebook tab.left {
-    border-right-width: 2px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    padding: 6px 7px 6px 5px;
+    border-image: -gtk-gradient (linear, left top, right top,
+                                 from (@dark_bg_secondary),
+                                 to (@dark_bg_selected)) 1;
+    border-right-width: 0;
 }
 
 .notebook tab.left:hover {
-    border-right-color: alpha(@theme_selected_bg_color, 0.3);
+    box-shadow:inset -3px 0 @selected_bg_color;
 }
 
 .notebook tab.left:active {
-    border-right-color: @theme_selected_bg_color;
+    border-image: none;
+    box-shadow:inset -3px 0 @selected_bg_color;
 }
 
 .notebook tab GtkLabel {
-    color: mix(@theme_text_color, @theme_base_color, 0.3);
+    color: @dark_fg_color;
 }
 
 .notebook .prelight-page,
 .notebook .prelight-page GtkLabel {
-    color: mix (@theme_text_color, @theme_base_color, 0.15);
+    color: @dark_fg_color;
 }
 
 .notebook .active-page,
 .notebook .active-page GtkLabel {
-    color: @theme_text_color;
+    color: @dark_fg_color;
 }
 
 .notebook tab.reorderable-page:hover {
-    background-color: shade(@theme_base_color, 0.85);
-    border-left: 0;
-    border-right: 0;
+    background-color: @dark_bg_secondary;
+    border: 0;
     /* using box shadows instead of borders due to slanted edges */
     box-shadow: inset 0 3px alpha(black, 0.03), inset 0 2px alpha(black, 0.03), inset 0 1px alpha(black, 0.03),
                 inset 1px 0 shade(@theme_base_color, 0.7), inset -1px 0 shade(@theme_base_color, 0.7);
@@ -1215,7 +1219,7 @@ GtkComboBox .menu .menuitem *:insensitive {
     border-color: transparent;
     background-image: none;
     background-color: transparent;
-    color: mix(@theme_text_color, @theme_base_color, 0.5);
+    color: @dark_fg_color;
 }
 
 .notebook tab .button:hover {
