@@ -1115,19 +1115,16 @@ GtkComboBox .menu .menuitem *:insensitive {
     border-image: -gtk-gradient (linear, left top, left bottom,
                                  from (@dark_bg_secondary),
                                  to (@dark_bg_selected)) 1;
+    border-bottom-width: 0;
 }
 
 .notebook tab.top:hover {
-    border-bottom-image: none;
-    border-bottom-width: 3px;
-    border-bottom-color: @selected_bg_color;
-    border-top-color: transparent;
+    box-shadow:inset 0 -3px @selected_bg_color;
 }
 
 .notebook tab.top:active {
     border-image: none;
-    border-bottom-width: 3px;
-    border-bottom-color: @selected_bg_color;
+    box-shadow:inset 0 -3px @selected_bg_color;
 }
 
 .notebook tab.right {
