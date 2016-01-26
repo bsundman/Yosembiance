@@ -14,16 +14,16 @@ GeditDocumentsPanel .view:backdrop {
 }
 
 GeditWindow .notebook {
-    border-radius: 1px;
+    border-radius: 0;
 }
 
 GeditPanel .notebook {
-    border-radius: 1px;
+    border-radius: 0;
 }
 
 GeditPanel .notebook tab,
 GeditWindow .notebook tab {
-    border-radius: 3px;
+    border-radius: 0;
 }
 
 GeditViewFrame .gedit-search-slider {
@@ -50,6 +50,8 @@ GeditFileBrowserWidget .toolbar  {
     background-color: @bg_color;
     border: none;
     padding-bottom: 3px;
+    border-bottom: 1px;
+    border-bottom-color: black;
 }
 
 .gedit-search-entry-occurrences-tag {
