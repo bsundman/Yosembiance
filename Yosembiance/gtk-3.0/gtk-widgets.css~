@@ -903,11 +903,9 @@ GtkComboBox .menuitem *:hover {
 .menuitem:hover,
 .menu .menuitem:hover {
     border-radius: 0;
-    background-color: @selected_bg_color;
-    background-image: none;
-/*    background-image: -gtk-gradient (linear, left top, left bottom,
+    background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@selected_bg_color, 1.1)),
-                                     to (shade (@selected_bg_color, 0.9))); */
+                                     to (shade (@selected_bg_color, 0.9)));
     border-image: -gtk-gradient (linear, left top, left bottom,
                                  from (shade (@selected_bg_color, 0.7)),
                                  to (shade (@selected_bg_color, 0.7))) 1;
