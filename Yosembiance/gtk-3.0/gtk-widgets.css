@@ -896,7 +896,6 @@ GtkComboBox .menuitem * {
 }
 
 GtkComboBox .menuitem *:hover {
-    background-color: @selected_bg_color;
     color: @selected_fg_color;
 }
 
