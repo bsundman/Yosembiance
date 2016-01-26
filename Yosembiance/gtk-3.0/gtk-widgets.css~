@@ -135,7 +135,6 @@
 
 .button:focus {
     border-color: @selected_bg_color;
-    box-shadow-color: selected_bg_color;
 }
 
 .button.flat {
@@ -340,7 +339,7 @@
 .primary-toolbar .linked .button:only-child:checked,
 .header-bar .linked .button:only-child:checked {
     border-radius: 4px;
-    border-left-color: shade(@dark_bg_color, 1.7);
+    border-left-color: @dark_button_border;
 }
 
 /*** primary-toolbar / header-bar buttons ***/
@@ -358,7 +357,7 @@
 
 .primary-toolbar .linked .button:first-child,
 .header-bar .linked .button:first-child {
-    border-left-color: shade(@dark_bg_color, 1.7);
+    border-left-color: @dark_button_border;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
@@ -904,9 +903,11 @@ GtkComboBox .menuitem *:hover {
 .menuitem:hover,
 .menu .menuitem:hover {
     border-radius: 0;
-    background-image: -gtk-gradient (linear, left top, left bottom,
+    background-color: @selected_bg_color;
+    background-image: none;
+/*    background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@selected_bg_color, 1.1)),
-                                     to (shade (@selected_bg_color, 0.9)));
+                                     to (shade (@selected_bg_color, 0.9))); */
     border-image: -gtk-gradient (linear, left top, left bottom,
                                  from (shade (@selected_bg_color, 0.7)),
                                  to (shade (@selected_bg_color, 0.7))) 1;
@@ -1812,7 +1813,7 @@ GtkTextView {
 
 .primary-toolbar .button,
 .header-bar .button {
-    border: solid shade(@dark_bg_color, 1.7);
+    border: solid @dark_button_border;
     border-width: 1px 1px 0 1px;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.4)),
