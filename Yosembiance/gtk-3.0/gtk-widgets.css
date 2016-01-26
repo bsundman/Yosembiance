@@ -866,11 +866,12 @@ GtkComboBox .menu {
  ***************/
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
-    background-color: transparent;
+    background-color: @selected_bg_color;
     background-clip: border-box;
-    background-image: -gtk-gradient (linear, left top, left bottom,
+/*    background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.38)),
                                      to (shade (@dark_bg_color, 1.11)));
+*/
 
     box-shadow: inset 0 1px 1px 0 shade (@dark_bg_color, 1.8);
 
