@@ -54,8 +54,10 @@
 @define-color scrollbar_track_color mix(@base_color, black, 0.1); /* #e6e6e6 */
 
 /* yosembiance colors */
-@define-color button_border shade(@bg_color, 0.8);
-@define-color dark_button_border shade(@dark_bg_color, 1.7);
+@define-color dark_bg_secondary shade(@dark_bg_color,1.1);
+@define-color dark_bg_selected shade(@dark_bg_color,1.5);
+@define-color dark_button_border alpha(white, 0.15);
+@define-color dark_button_normal alpha(white, 0.05);
 
 @import url("gtk-widgets-borders.css");
 @import url("gtk-widgets-assets.css");

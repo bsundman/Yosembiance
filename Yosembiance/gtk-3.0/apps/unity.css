@@ -21,18 +21,17 @@ UnityDecoration {
 
 UnityDecoration.top {
     border: 0; /* solid shade (@dark_bg_color, 1.05); rgba (0, 3, 5, 0.03); - shade (@dark_bg_color, 1.5) */
-    border-bottom-width: 0;
+    border-bottom: 0px solid @dark_button_border;
     border-radius: 6px 6px 0 0;
     padding: 0 6px 0 6px;
 
-/*    box-shadow: inset 0 0 transparent, inset 0 0 transparent,
-                inset 0 1px shade (@dark_bg_color, 1.3), inset 0 0 transparent;
-*/
+    box-shadow: inset 0 1px shade (@dark_bg_color, 1.3);
+
     background-color: transparent;
     background-clip: border-box;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.2)),
-                                     to (shade (@dark_bg_color, 1.0)));
+                                     from (shade (@dark_bg_color, 1.15)),
+                                     to (shade (@dark_bg_color, 1)));
 
     color: @dark_fg_color;
     text-shadow: none;
@@ -41,14 +40,16 @@ UnityDecoration.top {
 UnityDecoration.top:backdrop {
 /*    border: 1px solid rgba (14, 13, 0, 0.03); @dark_bg_color - shade (#474642, 0.92); */
 /*    border-bottom-width: 0; */
+    border-bottom: 1px solid transparent;
     background-color: transparent;
     background-clip: border-box;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (#474642, 0.92)),
+                                     from (@dark_bg_color),
                                      to (@dark_bg_color));
-    box-shadow: inset 0 0 transparent, inset 0 0 transparent,
-                inset 0 0 #474642, inset 0 0 transparent;
+
     color: #807d78;
+
+    box-shadow: inset 0 1px shade (@dark_bg_color, 1.1);
 }
 
 UnityDecoration.left,

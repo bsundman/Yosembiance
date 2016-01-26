@@ -25,8 +25,7 @@ UnityDecoration.top {
     border-radius: 6px 6px 0 0;
     padding: 0 6px 0 6px;
 
-    box-shadow: inset 0 0 transparent, inset 0 0 transparent,
-                inset 0 1px shade (@dark_bg_color, 1.3), inset 0 0 transparent;
+    box-shadow: inset 0 1px shade (@dark_bg_color, 1.3);
 
     background-color: transparent;
     background-clip: border-box;
@@ -50,8 +49,7 @@ UnityDecoration.top:backdrop {
 
     color: #807d78;
 
-    box-shadow: inset 0 0 transparent, inset 0 0 transparent,
-                inset 0 1px shade (@dark_bg_color, 1.1), inset 0 0 transparent;
+    box-shadow: inset 0 1px shade (@dark_bg_color, 1.1);
 }
 
 UnityDecoration.left,
