@@ -11,8 +11,8 @@ style "chromium_toolbar_button" {
 
 style "chrome-gtk-frame"
 {
-  ChromeGtkFrame::frame-color = "#373d3e"
-  ChromeGtkFrame::inactive-frame-color = "#2e3233"
+  ChromeGtkFrame::frame-color = "#353b3c"
+  ChromeGtkFrame::inactive-frame-color = "#353b3c"
 
   ChromeGtkFrame::frame-gradient-size = 16
   ChromeGtkFrame::frame-gradient-color = "#5c5b56"
