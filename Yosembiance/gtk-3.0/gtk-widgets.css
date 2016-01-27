@@ -1987,8 +1987,7 @@ GtkTextView {
 
     padding: 7px;
 
-    box-shadow: inset 0 1px shade (@dark_bg_color, 1.4),
-		inset 0 -1px shade (@dark_bg_color, 0.8);
+    box-shadow: inset 0 1px shade (@dark_bg_color, 1.4);
 }
 
 .titlebar.header-bar .title {
@@ -2006,8 +2005,7 @@ GtkTextView {
     background-color: @dark_bg_color;
     border-top-color: @dark_bg_color;
 
-    box-shadow: inset 0 1px shade (@dark_bg_color, 1.1),
-		inset 0 -1px shade (@dark_bg_color, 0.95);
+    box-shadow: inset 0 1px shade (@dark_bg_color, 1.1);
 }
 
 .maximized .titlebar.header-bar {
