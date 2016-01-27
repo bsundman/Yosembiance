@@ -6,6 +6,10 @@ A modified Ambiance theme (loosely) inspired by OSX Yosemite.
 Changelog
 =========
 
+January 27, 2016
+----------------------
+Design improvements, new tabs and menus, improved Ubuntu 14.04 and 16.04 compatibility
+
 January 23, 2016
 ----------------------
 New and updated widgets

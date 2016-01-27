@@ -2425,6 +2425,7 @@ GtkViewport.frame {
 .popover .menuitem:active,
 .popover .menuitem:insensitive,
 .popover .menuitem:backdrop {
+    color: @dark_fg_color;
     border-image: none;
     border: none;
     text-shadow: none;
