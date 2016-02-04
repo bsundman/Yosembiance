@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Yosembiance-Blue
+Name=Yosembiance-Kraken-Blue
 Comment=Yosembiance-Blue theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Yosembiance-Blue
-MetacityTheme=Yosembiance-Blue
+GtkTheme=Yosembiance-Kreaken-Blue
+MetacityTheme=Yosembiance-Kraken-Blue
 IconTheme=ubuntu-mono-dark
 CursorTheme=DMZ-White
 ButtonLayout=close,minimize,maximize:
