@@ -8,7 +8,7 @@ Changelog
 
 February 04, 2016
 ----------------------
-Default Yosembiance became Yosembiance-Ubuntu-Orange.  Yosembiance-Blue became Yosembiance-Kraken-Blue.  Added more color schemes.
+Yosembiance became Yosembiance-Ubuntu-Orange.  Yosembiance-Blue became Yosembiance-Kraken-Blue.  Added Yosembiance-Atomic and more color schemes.
 
 January 27, 2016
 ----------------------
