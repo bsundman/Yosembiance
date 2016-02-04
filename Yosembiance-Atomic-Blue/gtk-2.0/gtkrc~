@@ -1,4 +1,4 @@
-gtk-color-scheme = "base_color:#f9f9f9\nfg_color:#4c4c4c\ntooltip_fg_color:#ffffff\nselected_bg_color:#f07746\nselected_fg_color:#FFFFFF\ntext_color:#3C3C3C\nbg_color:#dadada\ntooltip_bg_color:#000000\nlink_color:#DD4814"
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#ffffff\nselected_bg_color:#f07746\nselected_fg_color:#FFFFFF\ntext_color:#3C3C3C\nbg_color:#dadada\ntooltip_bg_color:#000000\nlink_color:#DD4814"
 
 gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
 
@@ -121,7 +121,7 @@ style "default" {
 
 style "dark"
 {
-	color["bg_color_dark"] 	= "#3c3b37"
+	color["bg_color_dark"] 	= "#3c3c3c"
 	color["fg_color_dark"] 	= "#dfdbd2"
 	color["selected_fg_color_dark"] = "#ffffff"
 
