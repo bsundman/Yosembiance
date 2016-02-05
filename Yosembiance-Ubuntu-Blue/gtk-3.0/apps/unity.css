@@ -20,7 +20,7 @@ UnityDecoration {
 }
 
 UnityDecoration.top {
-    border: 0; /* solid shade (@dark_bg_color, 1.05); rgba (0, 3, 5, 0.03); - shade (@dark_bg_color, 1.5) */
+    border: 1px solid rgba (0, 0, 0, 0.01);
     border-bottom: 0px solid @dark_button_border;
     border-radius: 6px 6px 0 0;
     padding: 0 6px 0 6px;
