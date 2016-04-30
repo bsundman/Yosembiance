@@ -20,17 +20,19 @@ UnityDecoration {
 }
 
 UnityDecoration.top {
-    border: 1px solid rgba (0, 0, 0, 0.01);
-    border-bottom: 0px solid @dark_button_border;
-    border-radius: 6px 6px 0 0;
-    padding: 0 6px 0 6px;
+    border: 1px solid rgba(100,100,100,0.05);
+    border-bottom-width: 0;
+    border-radius: 4px 4px 0 0;
+    padding: 0 5px 0 5px;
 
-    box-shadow: inset 0 1px shade (@dark_bg_color, 1.3);
+    box-shadow: inset 0 1px shade(@dark_bg_color, 1.55);
+
+/*    box-shadow: inset 0 1px shade (@dark_bg_color, 1.5); */
 
     background-color: transparent;
     background-clip: border-box;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.2)),
+                                     from (shade (@dark_bg_color, 1.3)),
                                      to (shade (@dark_bg_color, 1)));
 
     color: @dark_fg_color;
@@ -38,22 +40,20 @@ UnityDecoration.top {
 }
 
 UnityDecoration.top:backdrop {
-/*    border: 1px solid rgba (14, 13, 0, 0.03); @dark_bg_color - shade (#474642, 0.92); */
-/*    border-bottom-width: 0; */
-    border-bottom: 1px solid transparent;
+    border: 1px solid rgba(100,100,100,0.05);
+    border-bottom-width: 0;
     background-color: transparent;
     background-clip: border-box;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (@dark_bg_color),
                                      to (@dark_bg_color));
-
-    color: #807d78;
-
     box-shadow: inset 0 1px shade (@dark_bg_color, 1.1);
+    color: #807d78;
 }
 
 UnityDecoration.left,
 UnityDecoration.right {
+    border: 1px solid rgba (0, 0, 0, 0.09);
     background-color: shade (@bg_color, 0.7);
     background-size: 1px 70px;
     background-repeat: repeat-x;
