@@ -6,6 +6,10 @@ A modified Ambiance theme (loosely) inspired by OSX Yosemite.
 Changelog
 =========
 
+April 29, 2016
+----------------------
+Started updating window borders.  Current design process can be seen in Yosembiance-Kraken.
+
 February 04, 2016
 ----------------------
 Yosembiance became Yosembiance-Ubuntu-Orange.  Yosembiance-Blue became Yosembiance-Kraken-Blue.  Added Yosembiance-Atomic and more color schemes.
