@@ -122,7 +122,10 @@
 }
 
 .background:backdrop {
+
+/*  Issue #20 design request
     color: @backdrop_fg_color;
+*/
     box-shadow: inset -1px 0 shade (@bg_color, 0.94);
 }
 
@@ -151,7 +154,9 @@
 
     border-color: shade(@bg_color, 0.9);
 
+/*  Issue #20 design request
     color: @backdrop_fg_color;
+*/
 }
 
 .button:focus {
@@ -1896,7 +1901,9 @@ GtkPlacesSidebar.sidebar .sidebar-icon {
 }
 
 .spinner:active:backdrop {
+/*  Issue #20 design request
     color: @backdrop_fg_color;
+*/
 }
 
 .spinner:active:insensitive {
@@ -1971,7 +1978,9 @@ GtkSwitch.slider:backdrop {
     background-image: none;
     background-color: @bg_color;
 
+/*  Issue #20 design request
     color: @backdrop_fg_color;
+*/
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
 }
 
@@ -2101,7 +2110,7 @@ GtkTextView {
 }
 
 .toolbar:backdrop {
-    color: @backdrop_fg_color;
+
 }
 
 /*******************
